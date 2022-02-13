@@ -41,7 +41,7 @@ struct ContentView: View {
 
 struct MyPlayer : UIViewRepresentable {
     typealias UIViewType = MyPlayerUIView
-
+    
     let video: String
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
@@ -52,34 +52,25 @@ struct MyPlayer : UIViewRepresentable {
         print("Creating UI view.")
         let myAsset: AVAsset = AVAsset(url: Bundle.main.url(forResource: "content/video/\(self.video)", withExtension: "mp4")!)
         let myPlayerItem = AVPlayerItem(asset: myAsset)
-        let myPlayer = AVPlayer(playerItem: myPlayerItem)
-        myPlayer.play()
-        return MyPlayerUIView(player: myPlayer)
-    }
-    
-    static func dismantleUIView(_ uiView: MyPlayerUIView, coordinator: ()) {
-        uiView.shutdown()
+        
+        return MyPlayerUIView(item: myPlayerItem)
     }
 }
 
 class MyPlayerUIView : UIView {
     private let playerLayer = AVPlayerLayer()
+    private let looper: NSObject
     
-    init(player: AVPlayer) {
+    init(item: AVPlayerItem) {
+        let myPlayer = AVQueuePlayer(playerItem: item)
+        looper = AVPlayerLooper(player: myPlayer, templateItem: item)
         super.init(frame: .zero)
-        playerLayer.player = player
+        
+        playerLayer.player = myPlayer
+        
         layer.addSublayer(playerLayer)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.onItemEndedPlaying(notification:)), name: .AVPlayerItemDidPlayToEndTime, object: nil)
-    }
-    
-    @objc
-    private func onItemEndedPlaying(notification: Notification) {
-        let item = notification.object as? AVPlayerItem
-        if item == self.playerLayer.player?.currentItem {
-            self.playerLayer.player?.seek(to: CMTime(seconds: 0.0, preferredTimescale: 600))
-            self.playerLayer.player?.play()
-        }
-        print("AVPlayerItemDidPlayToEndTime")
+        
+        myPlayer.play()
     }
     
     required init?(coder: NSCoder) {
@@ -89,12 +80,6 @@ class MyPlayerUIView : UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         playerLayer.frame = bounds
-    }
-    
-    public func shutdown() {
-        NotificationCenter.default.removeObserver(self)
-        print("Shutdown!")
-        
     }
 }
 
