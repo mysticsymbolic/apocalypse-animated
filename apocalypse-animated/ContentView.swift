@@ -9,8 +9,6 @@ import SwiftUI
 import AVKit
 
 struct DetailView: View {
-    private let myPlayer: AVPlayer = AVPlayer(url: Bundle.main.url(forResource: "content/video/throne2_5", withExtension: "mp4")!)
-    
     var body: some View {
         ScrollView {
             VStack {
@@ -18,26 +16,11 @@ struct DetailView: View {
                     .padding()
                 Text("Hello, worlde2!")
                     .padding()
-                MyPlayer(player: myPlayer).frame(height: 300.0).onAppear(perform: {
-                    self.startMyMovie()
-                }).onDisappear(perform: {
-                    self.stopMyMovie()
-                })
+                MyPlayer(video: "throne2_5").frame(height: 300.0)
                 Text("Hello, worlde3! I am a very very very long text snippet yup yup lorem ispum blah blah blah egpwoke gpwoekg pweogk wpegko apweog kpwaeokgapweogk awpoe gkapweo gkawepo gkawpeo kgapwokeg  apweogkap woekg paowke gpawoek gapweok gawpoe gkawpoe kgawpeo kgawpo gkawpeo kgapwoegk awpeg okawpe ogkawpe ogkawepo kgapweo kgapweo kapwoe kaagpeokg awegpo akwepgo kawpo egkawpeo kawpeo gkapweo kapwoe gkapweo kgapweo kpgaowe k")
                     .padding()
             }
         }
-    }
-    
-    private func startMyMovie() {
-        print("Oooo starting movie.")
-        self.myPlayer.seek(to: CMTime(seconds: 0.0, preferredTimescale: 600))
-        self.myPlayer.play()
-    }
-    
-    private func stopMyMovie() {
-        print("Stopping movie.")
-        self.myPlayer.pause()
     }
 }
 
@@ -58,8 +41,8 @@ struct ContentView: View {
 
 struct MyPlayer : UIViewRepresentable {
     typealias UIViewType = MyPlayerUIView
-    
-    let player: AVPlayer
+
+    let video: String
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
         print("Update UI view...")
@@ -67,7 +50,11 @@ struct MyPlayer : UIViewRepresentable {
     
     func makeUIView(context: Context) -> MyPlayerUIView {
         print("Creating UI view.")
-        return MyPlayerUIView(player: player)
+        let myAsset: AVAsset = AVAsset(url: Bundle.main.url(forResource: "content/video/\(self.video)", withExtension: "mp4")!)
+        let myPlayerItem = AVPlayerItem(asset: myAsset)
+        let myPlayer = AVPlayer(playerItem: myPlayerItem)
+        myPlayer.play()
+        return MyPlayerUIView(player: myPlayer)
     }
     
     static func dismantleUIView(_ uiView: MyPlayerUIView, coordinator: ()) {
