@@ -28,18 +28,24 @@ struct LoopingVideo : UIViewRepresentable {
 
 class LoopingVideoUIView : UIView {
     private let playerLayer = AVPlayerLayer()
+    private let player: AVQueuePlayer
     private let looper: NSObject
     
     init(item: AVPlayerItem) {
-        let myPlayer = AVQueuePlayer(playerItem: item)
-        looper = AVPlayerLooper(player: myPlayer, templateItem: item)
+        player = AVQueuePlayer(playerItem: item)
+        looper = AVPlayerLooper(player: player, templateItem: item)
         super.init(frame: .zero)
-        
-        playerLayer.player = myPlayer
+        playerLayer.player = player
         
         layer.addSublayer(playerLayer)
         
-        myPlayer.play()
+        player.play()
+        NotificationCenter.default.addObserver(self, selector: #selector(onApplicationDidBecomeActive(application:)), name: UIApplication.didBecomeActiveNotification, object: nil)
+    }
+    
+    @objc
+    private func onApplicationDidBecomeActive(application: UIApplication) {
+        player.play()
     }
     
     required init?(coder: NSCoder) {
@@ -49,6 +55,10 @@ class LoopingVideoUIView : UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         playerLayer.frame = bounds
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 }
 
