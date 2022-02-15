@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B76E637027BB394E0087B04C /* LoopingVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E636F27BB394E0087B04C /* LoopingVideo.swift */; };
 		B77ECBF027B9BEC200623DEC /* apocalypse_animatedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ECBEF27B9BEC200623DEC /* apocalypse_animatedApp.swift */; };
 		B77ECBF227B9BEC200623DEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ECBF127B9BEC200623DEC /* ContentView.swift */; };
 		B77ECBF427B9BEC300623DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B77ECBF327B9BEC300623DEC /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B76E636F27BB394E0087B04C /* LoopingVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingVideo.swift; sourceTree = "<group>"; };
 		B77ECBEC27B9BEC200623DEC /* apocalypse-animated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "apocalypse-animated.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77ECBEF27B9BEC200623DEC /* apocalypse_animatedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apocalypse_animatedApp.swift; sourceTree = "<group>"; };
 		B77ECBF127B9BEC200623DEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				B77ECC1927B9C18600623DEC /* content */,
 				B77ECBEF27B9BEC200623DEC /* apocalypse_animatedApp.swift */,
 				B77ECBF127B9BEC200623DEC /* ContentView.swift */,
+				B76E636F27BB394E0087B04C /* LoopingVideo.swift */,
 				B77ECBF327B9BEC300623DEC /* Assets.xcassets */,
 				B77ECBF527B9BEC300623DEC /* Preview Content */,
 			);
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B76E637027BB394E0087B04C /* LoopingVideo.swift in Sources */,
 				B77ECBF227B9BEC200623DEC /* ContentView.swift in Sources */,
 				B77ECBF027B9BEC200623DEC /* apocalypse_animatedApp.swift in Sources */,
 			);

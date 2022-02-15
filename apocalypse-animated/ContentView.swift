@@ -6,18 +6,17 @@
 //
 
 import SwiftUI
-import AVKit
 
 struct DetailView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Text("Hello, worlde!")
+                Text("Here is some text!")
                     .padding()
-                Text("Hello, worlde2!")
+                Text("Here is some more text!")
                     .padding()
-                MyPlayer(video: "throne2_5").frame(height: 300.0)
-                Text("Hello, worlde3! I am a very very very long text snippet yup yup lorem ispum blah blah blah egpwoke gpwoekg pweogk wpegko apweog kpwaeokgapweogk awpoe gkapweo gkawepo gkawpeo kgapwokeg  apweogkap woekg paowke gpawoek gapweok gawpoe gkawpoe kgawpeo kgawpo gkawpeo kgapwoegk awpeg okawpe ogkawpe ogkawepo kgapweo kgapweo kapwoe kaagpeokg awegpo akwepgo kawpo egkawpeo kawpeo gkapweo kapwoe gkapweo kgapweo kpgaowe k")
+                LoopingVideo(video: "throne2_5").frame(height: 300.0)
+                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie diam dapibus ullamcorper fringilla. Nunc nulla purus, consequat non rutrum sed, rhoncus eu nunc. Curabitur eleifend leo vitae convallis bibendum. Curabitur et ligula nec purus ornare lacinia nec convallis dolor. Vivamus augue nibh, molestie id viverra in, fermentum vel turpis. Nam a neque lacus. Suspendisse eu tortor est. Ut eget tellus pellentesque, dapibus leo ut, dapibus elit. Aliquam interdum molestie lorem. Nullam semper imperdiet orci.")
                     .padding()
             }
         }
@@ -29,57 +28,13 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 NavigationLink(destination: DetailView()) {
-                    Text("SUP")
+                    Text("First view")
                 }
                 NavigationLink(destination: Text("here is another view")) {
-                    Text("Other")
+                    Text("Second view")
                 }
             }
         }
-    }
-}
-
-struct MyPlayer : UIViewRepresentable {
-    typealias UIViewType = MyPlayerUIView
-    
-    let video: String
-    
-    func updateUIView(_ uiView: UIViewType, context: Context) {
-        print("Update UI view...")
-    }
-    
-    func makeUIView(context: Context) -> MyPlayerUIView {
-        print("Creating UI view.")
-        let myAsset: AVAsset = AVAsset(url: Bundle.main.url(forResource: "content/video/\(self.video)", withExtension: "mp4")!)
-        let myPlayerItem = AVPlayerItem(asset: myAsset)
-        
-        return MyPlayerUIView(item: myPlayerItem)
-    }
-}
-
-class MyPlayerUIView : UIView {
-    private let playerLayer = AVPlayerLayer()
-    private let looper: NSObject
-    
-    init(item: AVPlayerItem) {
-        let myPlayer = AVQueuePlayer(playerItem: item)
-        looper = AVPlayerLooper(player: myPlayer, templateItem: item)
-        super.init(frame: .zero)
-        
-        playerLayer.player = myPlayer
-        
-        layer.addSublayer(playerLayer)
-        
-        myPlayer.play()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        playerLayer.frame = bounds
     }
 }
 
