@@ -93,6 +93,7 @@ struct ChapterView: View {
     var body: some View {
         ScrollView {
             VStack {
+                Text(self.data.title).font(.title2).padding()
                 ForEach(self.data.items, id: \.self) { item in
                     switch item {
                     case .Verse(let number, let text):
@@ -109,10 +110,13 @@ struct ChapterView: View {
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            VStack {
-                ForEach(SampleChapters, id: \.self) { chapter in
-                    NavigationLink(destination: ChapterView(data: chapter)) {
-                        Text(chapter.title).padding()
+            ScrollView {
+                VStack {
+                    Text("Apocalypse Animated").font(.title).padding()
+                    ForEach(SampleChapters, id: \.self) { chapter in
+                        NavigationLink(destination: ChapterView(data: chapter)) {
+                            Text(chapter.title).padding()
+                        }
                     }
                 }
             }
