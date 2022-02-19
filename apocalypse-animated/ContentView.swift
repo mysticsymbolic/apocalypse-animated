@@ -36,17 +36,34 @@ enum ChapterItem: Decodable, Hashable {
     }
 }
 
+func load<T: Decodable>(_ filename: String) -> T {
+    let data: Data
+    
+    guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
+    else {
+        fatalError("Couldn't find \(filename) in main bundle.")
+    }
+    
+    do {
+        data = try Data(contentsOf: file)
+    } catch {
+        fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
+    }
+    
+    do {
+        let decoder = JSONDecoder()
+        return try decoder.decode(T.self, from: data)
+    } catch {
+        fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
+    }
+}
+
+let SampleChapter: Chapter = load("content/sample-chapter.json")
+
 struct Chapter: Decodable, Hashable {
     let title: String
     let items: [ChapterItem]
 }
-
-let SampleChapter = Chapter(title: "Sample Chapter", items: [
-    ChapterItem.Verse(text: "Here is some text! Yup."),
-    ChapterItem.Verse(text: "Here is some more text!"),
-    ChapterItem.Animation(basename: "throne2_5", width: 640, height: 360),
-    ChapterItem.Verse(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie diam dapibus ullamcorper fringilla. Nunc nulla purus, consequat non rutrum sed, rhoncus eu nunc. Curabitur eleifend leo vitae convallis bibendum. Curabitur et ligula nec purus ornare lacinia nec convallis dolor. Vivamus augue nibh, molestie id viverra in, fermentum vel turpis. Nam a neque lacus. Suspendisse eu tortor est. Ut eget tellus pellentesque, dapibus leo ut, dapibus elit. Aliquam interdum molestie lorem. Nullam semper imperdiet orci.")
-])
 
 struct ChapterView: View {
     let data: Chapter
