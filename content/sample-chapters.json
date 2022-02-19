@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Sample Chapter 1",
+        "items": [
+            {
+                "type": "verse",
+                "number": 1,
+                "text": "Here is some text! Yup."
+            },
+            {
+                "type": "verse",
+                "number": 2,
+                "text": "Here is some more text! Mmmhmm."
+            },
+            {
+                "type": "animation",
+                "basename": "throne2_5",
+                "width": 640,
+                "height": 360
+            },
+            {
+                "type": "verse",
+                "number": 3,
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie diam dapibus ullamcorper fringilla. Nunc nulla purus, consequat non rutrum sed, rhoncus eu nunc. Curabitur eleifend leo vitae convallis bibendum. Curabitur et ligula nec purus ornare lacinia nec convallis dolor. Vivamus augue nibh, molestie id viverra in, fermentum vel turpis. Nam a neque lacus. Suspendisse eu tortor est. Ut eget tellus pellentesque, dapibus leo ut, dapibus elit. Aliquam interdum molestie lorem. Nullam semper imperdiet orci."
+            }
+        ]
+    },
+    {
+        "title": "Sample Chapter 2",
+        "items": [
+            {
+                "type": "verse",
+                "number": 1,
+                "text": "Hello."
+            }
+        ]
+    }
+]
