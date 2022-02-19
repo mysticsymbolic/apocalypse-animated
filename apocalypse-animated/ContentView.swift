@@ -66,6 +66,27 @@ struct Chapter: Decodable, Hashable {
     let items: [ChapterItem]
 }
 
+struct VerseView: View {
+    let number: Int
+    let text: String
+    
+    var body: some View {
+        HStack(alignment: .firstTextBaseline) {
+            Text(String(self.number)).baselineOffset(4.0).padding([.top, .leading]).font(.system(size: 12.0))
+            Text(self.text).padding().frame(maxWidth: .infinity, alignment: .leading)
+        }
+    }
+}
+
+struct VerseView_Previews: PreviewProvider {
+    static var previews: some View {
+        VStack {
+            VerseView(number: 1, text: "I am Alpha and Omega, the beginning and the ending, saith the Lord, which is, and which was, and which is to come, the Almighty.")
+            VerseView(number: 2, text: "I am a tiny verse.")
+        }
+    }
+}
+
 struct ChapterView: View {
     let data: Chapter
     
@@ -75,7 +96,7 @@ struct ChapterView: View {
                 ForEach(self.data.items, id: \.self) { item in
                     switch item {
                     case .Verse(let number, let text):
-                        Text("\(number). \(text)").padding()
+                        VerseView(number: number, text: text)
                     case .Animation(let basename, _, let height):
                         LoopingVideo(video: basename).frame(height: CGFloat(height))
                     }
