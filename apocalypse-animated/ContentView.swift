@@ -44,7 +44,7 @@ struct Chapter: Decodable, Hashable {
 let SampleChapter = Chapter(title: "Sample Chapter", items: [
     ChapterItem.Verse(text: "Here is some text! Yup."),
     ChapterItem.Verse(text: "Here is some more text!"),
-    ChapterItem.Animation(basename: "throne2_5", width: 450, height: 300),
+    ChapterItem.Animation(basename: "throne2_5", width: 640, height: 360),
     ChapterItem.Verse(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie diam dapibus ullamcorper fringilla. Nunc nulla purus, consequat non rutrum sed, rhoncus eu nunc. Curabitur eleifend leo vitae convallis bibendum. Curabitur et ligula nec purus ornare lacinia nec convallis dolor. Vivamus augue nibh, molestie id viverra in, fermentum vel turpis. Nam a neque lacus. Suspendisse eu tortor est. Ut eget tellus pellentesque, dapibus leo ut, dapibus elit. Aliquam interdum molestie lorem. Nullam semper imperdiet orci.")
 ])
 
