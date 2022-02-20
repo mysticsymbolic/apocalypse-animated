@@ -66,6 +66,16 @@ struct Chapter: Decodable {
     let items: [ChapterItem]
 }
 
+struct AnimationView: View {
+    let video: String
+    let width: Int
+    let height: Int
+
+    var body: some View {
+        LoopingVideo(video: self.video).frame(height: CGFloat(self.height))
+    }
+}
+
 struct VerseView: View {
     let number: Int
     let text: String
@@ -99,8 +109,8 @@ struct ChapterView: View {
                     switch item {
                     case .Verse(let number, let text):
                         VerseView(number: number, text: text)
-                    case .Animation(let basename, _, let height):
-                        LoopingVideo(video: basename).frame(height: CGFloat(height))
+                    case .Animation(let basename, let width, let height):
+                        AnimationView(video: basename, width: width, height: height)
                     }
                 }
             }
