@@ -2,7 +2,7 @@ import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 import * as cheerio from 'cheerio';
-import fetch from "node-fetch";
+import fetch, {Response} from "node-fetch";
 
 type ChapterItem = {
     type: "verse",
@@ -20,32 +20,60 @@ type Chapter = {
     items: ChapterItem[];
 };
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT_DIR = path.dirname(fileURLToPath(import.meta.url));
 
 const BASE_URL = "https://apocalypseanimated.com/";
 
-const CACHE_DIR = path.join(__dirname, '.cache');
+const CACHE_DIR = path.join(ROOT_DIR, '.cache');
 
-function writeTextFile(filename: string, value: string) {
+function ensureDirExistsForFile(filename: string) {
     const dirname = path.dirname(filename);
     if (!fs.existsSync(dirname)) {
         fs.mkdirSync(dirname, { recursive: true });
     }
+}
+
+function writeTextFile(filename: string, value: string) {
+    ensureDirExistsForFile(filename);
     fs.writeFileSync(filename, value, {encoding: 'utf-8'});
 }
 
-function readTextFile(filename: string) {
+function readTextFile(filename: string): string {
     return fs.readFileSync(filename, {encoding: 'utf-8'});
+}
+
+function writeBinaryFile(filename: string, value: Buffer) {
+    ensureDirExistsForFile(filename);
+    fs.writeFileSync(filename, value);
+}
+
+async function fetchAndCheck(url: string): Promise<Response> {
+    const req = await fetch(url);
+    if (!req.ok) {
+        throw new Error(`Got HTTP ${req.status} when retrieving ${url}`);
+    }
+    return req;
+}
+
+async function cacheBinaryFile(url: string, cachedFilename: string): Promise<string> {
+    const abspath = path.join(CACHE_DIR, cachedFilename);
+    if (!fs.existsSync(abspath)) {
+        console.log(`Retrieving ${url} and caching it at ${cachedFilename}.`);
+        const req = await fetchAndCheck(url);
+        const arrayBuffer = await req.arrayBuffer();
+        const view = new Uint8Array(arrayBuffer);
+        writeBinaryFile(abspath, Buffer.from(view));
+    } else {
+        console.log(`Using cached content of ${url} at ${cachedFilename}.`);
+    }
+    return abspath;
 }
 
 async function fetchTextFile(url: string, cachedFilename: string): Promise<string> {
     const abspath = path.join(CACHE_DIR, cachedFilename);
     if (!fs.existsSync(abspath)) {
         console.log(`Retrieving ${url} and caching it at ${cachedFilename}.`);
-        const req = await fetch(url);
-        if (!req.ok) {
-            throw new Error(`Got HTTP ${req.status} when retrieving ${url}`);
-        }
+        const req = await fetchAndCheck(url);
         writeTextFile(abspath, await req.text());
     } else {
         console.log(`Using cached content of ${url} at ${cachedFilename}.`);
@@ -89,12 +117,15 @@ async function scrapeChapter(chapter: Chapter, html: string): Promise<Chapter> {
                 continue;
             }
             const pathname = new URL(src).pathname;
-            const basename = path.posix.basename(pathname, '.gif');
+            const filename = path.posix.basename(pathname);
+            const ext = path.posix.extname(filename);
+            const stem = path.posix.basename(filename, ext);
 
-            console.log(`TODO: Download ${basename} image at ${src} and convert it to mp4.`);
+            await cacheBinaryFile(src, filename);
+            console.log(`TODO: Convert ${filename} to mp4.`);
             chapter.items.push({
                 type: "animation",
-                basename,
+                basename: stem,
                 width,
                 height
             });
