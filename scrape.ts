@@ -1,5 +1,6 @@
 import path from 'path';
 import fs from 'fs';
+import child_process from 'child_process';
 import { fileURLToPath } from 'url';
 import * as cheerio from 'cheerio';
 import fetch, {Response} from "node-fetch";
@@ -40,6 +41,15 @@ function writeTextFile(filename: string, value: string) {
 
 function readTextFile(filename: string): string {
     return fs.readFileSync(filename, {encoding: 'utf-8'});
+}
+
+function convertGifToMp4(absGifPath: string, absMp4Path: string) {
+    const relGifPath = path.relative(ROOT_DIR, absGifPath).replace(/\\/g, path.posix.sep);
+    const relMp4Path = path.relative(ROOT_DIR, absMp4Path).replace(/\\/g, path.posix.sep);
+    const ffmpegCmdline = `ffmpeg -i ${relGifPath} -movflags faststart -pix_fmt yuv420p -vf 'scale=trunc(iw/2)*2:trunc(ih/2)*2' ${relMp4Path}`
+    console.log(`Converting ${relGifPath} -> ${relMp4Path}.`);
+    // Running this through bash to support running a WSL2-based ffmpeg on Windows.
+    child_process.execSync(`bash -c "${ffmpegCmdline}"`);
 }
 
 function writeBinaryFile(filename: string, value: Buffer) {
@@ -120,9 +130,14 @@ async function scrapeChapter(chapter: Chapter, html: string): Promise<Chapter> {
             const filename = path.posix.basename(pathname);
             const ext = path.posix.extname(filename);
             const stem = path.posix.basename(filename, ext);
+            const mp4Filename = `${stem}.mp4`;
+            const absMp4Path = path.join(ROOT_DIR, 'content', 'video', mp4Filename);
 
-            await cacheBinaryFile(src, filename);
-            console.log(`TODO: Convert ${filename} to mp4.`);
+            if (!fs.existsSync(absMp4Path)) {
+                const absGifPath = await cacheBinaryFile(src, filename);
+                convertGifToMp4(absGifPath, absMp4Path);
+            }
+
             chapter.items.push({
                 type: "animation",
                 basename: stem,
