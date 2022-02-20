@@ -27,6 +27,10 @@ const BASE_URL = "https://apocalypseanimated.com/";
 
 const CACHE_DIR = path.join(ROOT_DIR, '.cache');
 
+const CONTENT_DIR = path.join(ROOT_DIR, 'content');
+
+const CONTENT_VIDEO_DIR = path.join(CONTENT_DIR, 'video');
+
 function ensureDirExistsForFile(filename: string) {
     const dirname = path.dirname(filename);
     if (!fs.existsSync(dirname)) {
@@ -43,9 +47,13 @@ function readTextFile(filename: string): string {
     return fs.readFileSync(filename, {encoding: 'utf-8'});
 }
 
+function rootRelativePosixPath(absPath: string): string {
+    return path.relative(ROOT_DIR, absPath).replace(/\\/g, path.posix.sep);
+}
+
 function convertGifToMp4(absGifPath: string, absMp4Path: string) {
-    const relGifPath = path.relative(ROOT_DIR, absGifPath).replace(/\\/g, path.posix.sep);
-    const relMp4Path = path.relative(ROOT_DIR, absMp4Path).replace(/\\/g, path.posix.sep);
+    const relGifPath = rootRelativePosixPath(absGifPath);
+    const relMp4Path = rootRelativePosixPath(absMp4Path);
     const ffmpegCmdline = `ffmpeg -i ${relGifPath} -movflags faststart -pix_fmt yuv420p -vf 'scale=trunc(iw/2)*2:trunc(ih/2)*2' ${relMp4Path}`
     console.log(`Converting ${relGifPath} -> ${relMp4Path}.`);
     // Running this through bash to support running a WSL2-based ffmpeg on Windows.
@@ -131,7 +139,7 @@ async function scrapeChapter(chapter: Chapter, html: string): Promise<Chapter> {
             const ext = path.posix.extname(filename);
             const stem = path.posix.basename(filename, ext);
             const mp4Filename = `${stem}.mp4`;
-            const absMp4Path = path.join(ROOT_DIR, 'content', 'video', mp4Filename);
+            const absMp4Path = path.join(CONTENT_VIDEO_DIR, mp4Filename);
 
             if (!fs.existsSync(absMp4Path)) {
                 const absGifPath = await cacheBinaryFile(src, filename);
@@ -174,8 +182,11 @@ async function main() {
         const chapterHtml = await fetchTextFile(url, filename);
         chapters.push(await scrapeChapter(chapter, chapterHtml));
     }
-    // console.log(JSON.stringify(chapters, null, 4));
-    console.log(`TODO: Write ${chapters.length} chapters.`);
+    const absJsonPath = path.join(CONTENT_DIR, 'chapters.json');
+    fs.writeFileSync(absJsonPath, JSON.stringify(chapters, null, 4), {
+        encoding: 'utf-8'
+    });
+    console.log(`Wrote ${chapters.length} chapters to ${rootRelativePosixPath(absJsonPath)}.`);
 }
 
 main().catch(e => {
