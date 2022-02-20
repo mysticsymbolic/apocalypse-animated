@@ -1,2 +1,10 @@
-## User settings
+node_modules/
+
+## Generated TypeScript files.
+*.js
+
+## Cached web scraping data.
+.cache
+
+## XCode User settings
 xcuserdata/

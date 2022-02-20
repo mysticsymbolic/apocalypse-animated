@@ -1,0 +1,27 @@
+{
+  "name": "apocalypse-animated",
+  "version": "1.0.0",
+  "description": "This is an attempt to make Nina Paley's [Apocalypse Animated](https://apocalypseanimated.com) into an iOS app.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mysticsymbolic/apocalypse-animated.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mysticsymbolic/apocalypse-animated/issues"
+  },
+  "homepage": "https://github.com/mysticsymbolic/apocalypse-animated#readme",
+  "dependencies": {
+    "@types/node": "^17.0.18",
+    "cheerio": "^1.0.0-rc.10",
+    "node-fetch": "^3.2.0",
+    "typescript": "^4.5.5"
+  }
+}
