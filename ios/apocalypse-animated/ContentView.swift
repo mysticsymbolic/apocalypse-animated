@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum ChapterItem: Decodable, Hashable {
+enum ChapterItem: Decodable {
     case Verse(number: Int, text: String)
     case Animation(basename: String, width: Int, height: Int)
     
@@ -61,7 +61,7 @@ func load<T: Decodable>(_ filename: String) -> T {
 
 let Chapters: [Chapter] = load("content/chapters.json")
 
-struct Chapter: Decodable, Hashable {
+struct Chapter: Decodable {
     let title: String
     let items: [ChapterItem]
 }
@@ -94,7 +94,8 @@ struct ChapterView: View {
         ScrollView {
             VStack {
                 Text(self.data.title).font(.title2).padding()
-                ForEach(self.data.items, id: \.self) { item in
+                ForEach(0..<self.data.items.count) { id in
+                    let item = self.data.items[id]
                     switch item {
                     case .Verse(let number, let text):
                         VerseView(number: number, text: text)
@@ -113,7 +114,8 @@ struct ContentView: View {
             ScrollView {
                 VStack {
                     Text("Apocalypse Animated").font(.title).padding()
-                    ForEach(Chapters, id: \.self) { chapter in
+                    ForEach(0..<Chapters.count) { id in
+                        let chapter = Chapters[id]
                         NavigationLink(destination: ChapterView(data: chapter)) {
                             Text(chapter.title).padding()
                         }
