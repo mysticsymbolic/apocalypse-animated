@@ -59,7 +59,7 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
 }
 
-let SampleChapters: [Chapter] = load("content/sample-chapters.json")
+let Chapters: [Chapter] = load("content/chapters.json")
 
 struct Chapter: Decodable, Hashable {
     let title: String
@@ -113,7 +113,7 @@ struct ContentView: View {
             ScrollView {
                 VStack {
                     Text("Apocalypse Animated").font(.title).padding()
-                    ForEach(SampleChapters, id: \.self) { chapter in
+                    ForEach(Chapters, id: \.self) { chapter in
                         NavigationLink(destination: ChapterView(data: chapter)) {
                             Text(chapter.title).padding()
                         }
