@@ -12,9 +12,11 @@ struct LoopingVideo : UIViewRepresentable {
     typealias UIViewType = LoopingVideoUIView
     
     let video: String
+    let isVisible: Bool
     
-    func updateUIView(_ uiView: UIViewType, context: Context) {
-        print("Update UI view...")
+    func updateUIView(_ uiView: LoopingVideoUIView, context: Context) {
+        uiView.setShouldPlay(self.isVisible)
+        print("Update UI view... \(self.video) \(self.isVisible)")
     }
     
     func makeUIView(context: Context) -> LoopingVideoUIView {
@@ -30,7 +32,8 @@ class LoopingVideoUIView : UIView {
     private let playerLayer = AVPlayerLayer()
     private let player: AVQueuePlayer
     private let looper: NSObject
-    
+    private var shouldPlay: Bool = false
+
     init(item: AVPlayerItem) {
         player = AVQueuePlayer(playerItem: item)
         looper = AVPlayerLooper(player: player, templateItem: item)
@@ -39,13 +42,25 @@ class LoopingVideoUIView : UIView {
         
         layer.addSublayer(playerLayer)
         
-        player.play()
         NotificationCenter.default.addObserver(self, selector: #selector(onApplicationDidBecomeActive(application:)), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
-    
+
+    func setShouldPlay(_ value: Bool) {
+        if self.shouldPlay != value {
+            self.shouldPlay = value
+            if self.shouldPlay {
+                self.player.play()
+            } else {
+                self.player.pause()
+            }
+        }
+    }
+
     @objc
     private func onApplicationDidBecomeActive(application: UIApplication) {
-        player.play()
+        if self.shouldPlay {
+            self.player.play()
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -59,12 +74,5 @@ class LoopingVideoUIView : UIView {
     
     deinit {
         NotificationCenter.default.removeObserver(self)
-    }
-}
-
-
-struct LoopingVideo_Previews: PreviewProvider {
-    static var previews: some View {
-        LoopingVideo(video: "throne2_5").frame(height: 300)
     }
 }

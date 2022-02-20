@@ -72,7 +72,14 @@ struct AnimationView: View {
     let height: Int
 
     var body: some View {
-        LoopingVideo(video: self.video).frame(height: CGFloat(self.height))
+        GeometryReader { geo in
+            LoopingVideo(video: self.video, isVisible: self.isVisible(geo))
+        }.frame(height: CGFloat(self.height))
+    }
+    
+    private func isVisible(_ geo: GeometryProxy) -> Bool {
+        let frame = geo.frame(in: .global)
+        return frame.intersects(UIScreen.main.bounds)
     }
 }
 
