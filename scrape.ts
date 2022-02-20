@@ -54,7 +54,7 @@ function rootRelativePosixPath(absPath: string): string {
 function convertGifToMp4(absGifPath: string, absMp4Path: string) {
     const relGifPath = rootRelativePosixPath(absGifPath);
     const relMp4Path = rootRelativePosixPath(absMp4Path);
-    const ffmpegCmdline = `ffmpeg -i ${relGifPath} -movflags faststart -pix_fmt yuv420p -vf 'scale=trunc(iw/2)*2:trunc(ih/2)*2' ${relMp4Path}`
+    const ffmpegCmdline = `ffmpeg -i ${relGifPath} -c:v libx264 -profile:v baseline -movflags faststart -pix_fmt yuv420p -vf 'scale=trunc(iw/2)*2:trunc(ih/2)*2' ${relMp4Path}`
     console.log(`Converting ${relGifPath} -> ${relMp4Path}.`);
     // Running this through bash to support running a WSL2-based ffmpeg on Windows.
     child_process.execSync(`bash -c "${ffmpegCmdline}"`);
