@@ -72,14 +72,21 @@ struct AnimationView: View {
     let height: Int
 
     var body: some View {
+        let (width, height) = self.getSize()
         GeometryReader { geo in
             LoopingVideo(video: self.video, isVisible: self.isVisible(geo))
-        }.frame(height: CGFloat(self.height))
+        }.frame(width: width, height: height)
     }
     
     private func isVisible(_ geo: GeometryProxy) -> Bool {
         let frame = geo.frame(in: .global)
         return frame.intersects(UIScreen.main.bounds)
+    }
+    
+    private func getSize() -> (CGFloat, CGFloat) {
+        let screenWidth = UIScreen.main.bounds.width
+        let height = (CGFloat(self.height) * screenWidth) / CGFloat(self.width)
+        return (screenWidth, height)
     }
 }
 
