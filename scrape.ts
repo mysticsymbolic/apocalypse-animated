@@ -127,7 +127,7 @@ async function scrapeChapter(chapter: Chapter, html: string): Promise<Chapter> {
                 continue;
             }
             const pathname = new URL(src).pathname;
-            const filename = path.posix.basename(pathname);
+            const filename = path.posix.basename(pathname).toLowerCase();
             const ext = path.posix.extname(filename);
             const stem = path.posix.basename(filename, ext);
             const mp4Filename = `${stem}.mp4`;
