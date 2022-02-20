@@ -74,7 +74,12 @@ struct AnimationView: View {
     var body: some View {
         let (width, height) = self.getSize()
         GeometryReader { geo in
-            LoopingVideo(video: self.video, isVisible: self.isVisible(geo))
+            let isVisible = self.isVisible(geo)
+            if isVisible {
+                LoopingVideo(video: self.video, isVisible: isVisible)
+            } else {
+                EmptyView()
+            }
         }.frame(width: width, height: height)
     }
     
