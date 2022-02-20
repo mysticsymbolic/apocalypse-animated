@@ -30,19 +30,18 @@ struct LoopingVideo : UIViewRepresentable {
 
 class LoopingVideoUIView : UIView {
     private let playerLayer = AVPlayerLayer()
-    private let player: AVQueuePlayer
-    private let looper: NSObject
+    private let player: AVPlayer
     private var shouldPlay: Bool = false
 
     init(item: AVPlayerItem) {
-        player = AVQueuePlayer(playerItem: item)
-        looper = AVPlayerLooper(player: player, templateItem: item)
+        player = AVPlayer(playerItem: item)
         super.init(frame: .zero)
         playerLayer.player = player
         
         layer.addSublayer(playerLayer)
         
         NotificationCenter.default.addObserver(self, selector: #selector(onApplicationDidBecomeActive(application:)), name: UIApplication.didBecomeActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.onItemEndedPlaying(notification:)), name: .AVPlayerItemDidPlayToEndTime, object: nil)
     }
 
     func setShouldPlay(_ value: Bool) {
@@ -62,7 +61,22 @@ class LoopingVideoUIView : UIView {
             self.player.play()
         }
     }
-    
+
+    @objc
+    private func onItemEndedPlaying(notification: Notification) {
+        let item = notification.object as? AVPlayerItem
+        if item == self.playerLayer.player?.currentItem {
+            if self.shouldPlay {
+                // Note that we used to use an AVPlayerLooper for this instead of doing
+                // it manually, but that caused lots of blank frames for very short
+                // videos that were less than a second long, so now we're doing it
+                // manually.
+                self.playerLayer.player?.seek(to: CMTime(seconds: 0.0, preferredTimescale: 600))
+                self.playerLayer.player?.play()
+            }
+        }
+    }
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
