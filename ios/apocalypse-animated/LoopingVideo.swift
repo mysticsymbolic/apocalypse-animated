@@ -16,40 +16,47 @@ struct LoopingVideo : UIViewRepresentable {
     
     func updateUIView(_ uiView: LoopingVideoUIView, context: Context) {
         uiView.setShouldPlay(self.isVisible)
-        print("Update UI view... \(self.video) \(self.isVisible)")
     }
     
     func makeUIView(context: Context) -> LoopingVideoUIView {
-        print("Creating UI view.")
         let myAsset: AVAsset = AVAsset(url: Bundle.main.url(forResource: "content/video/\(self.video)", withExtension: "mp4")!)
         let myPlayerItem = AVPlayerItem(asset: myAsset)
         
-        return LoopingVideoUIView(item: myPlayerItem)
+        return LoopingVideoUIView(item: myPlayerItem, name: self.video)
     }
 }
 
 class LoopingVideoUIView : UIView {
+    private let name: String
     private let playerLayer = AVPlayerLayer()
     private let player: AVPlayer
-    private var shouldPlay: Bool = false
+    private var shouldPlay: Bool = true
 
-    init(item: AVPlayerItem) {
+    init(item: AVPlayerItem, name: String) {
+        self.name = name
         player = AVPlayer(playerItem: item)
         super.init(frame: .zero)
         playerLayer.player = player
-        
+
+        if (self.shouldPlay) {
+            player.play()
+        }
+
         layer.addSublayer(playerLayer)
         
         NotificationCenter.default.addObserver(self, selector: #selector(onApplicationDidBecomeActive(application:)), name: UIApplication.didBecomeActiveNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.onItemEndedPlaying(notification:)), name: .AVPlayerItemDidPlayToEndTime, object: nil)
+        print("Creating LoopingVideoUIView '\(self.name)'.")
     }
 
     func setShouldPlay(_ value: Bool) {
         if self.shouldPlay != value {
             self.shouldPlay = value
             if self.shouldPlay {
+                print("Playing LoopingVideoUIView '\(self.name)'.")
                 self.player.play()
             } else {
+                print("Pausing LoopingVideoUIView '\(self.name)'.")
                 self.player.pause()
             }
         }
@@ -58,6 +65,7 @@ class LoopingVideoUIView : UIView {
     @objc
     private func onApplicationDidBecomeActive(application: UIApplication) {
         if self.shouldPlay {
+            print("Application became active, playing '\(self.name)'.")
             self.player.play()
         }
     }
@@ -88,5 +96,6 @@ class LoopingVideoUIView : UIView {
     
     deinit {
         NotificationCenter.default.removeObserver(self)
+        print("Destroying LoopingVideoUIView '\(self.name)'.")
     }
 }

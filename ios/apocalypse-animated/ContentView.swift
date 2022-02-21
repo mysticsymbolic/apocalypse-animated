@@ -86,7 +86,10 @@ struct AnimationView: View {
     }
     
     private func isVisible(_ geo: GeometryProxy) -> Bool {
-        let frame = geo.frame(in: .global)
+        // We're actually testing to see if the animation is *almost* visible
+        // too, which will help prevent any brief flickers where the movie is
+        // still loading while it's on-screen.
+        let frame = geo.frame(in: .global).insetBy(dx: 0.0, dy: -100.0)
         return frame.intersects(self.containerGeometry.frame(in: .global))
     }
     
