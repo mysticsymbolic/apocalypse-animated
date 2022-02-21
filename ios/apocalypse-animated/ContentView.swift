@@ -100,7 +100,7 @@ struct AnimationView: View {
         // subpixel slivers of empty space between the
         // animation and the edge of the screen.
         let EXTRA_WIDTH = 0.5
-
+        
         let containerWidth = min(self.containerGeometry.frame(in: .global).width, CGFloat(self.maxWidth)) + EXTRA_WIDTH
         let height = (CGFloat(self.height) * containerWidth) / CGFloat(self.width)
         return (containerWidth, height)
