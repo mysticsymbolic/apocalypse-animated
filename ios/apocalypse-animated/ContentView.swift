@@ -160,12 +160,12 @@ struct PageButtons: View {
     
     var body: some View {
         HStack {
-            Button("←") {
+            Button("Previous") {
                 if let page = self.page {
                     self.page = page - 1
                 }
             }.disabled(self.page == 0)
-            Button("→") {
+            Button("Next") {
                 if let page = self.page {
                     self.page = page + 1
                 }
