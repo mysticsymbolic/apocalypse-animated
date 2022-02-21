@@ -149,7 +149,7 @@ struct ContentView: View {
                             Text(chapter.title).padding()
                         }
                     }
-                }
+                }.frame(maxWidth: .infinity)
             }
         }
     }
