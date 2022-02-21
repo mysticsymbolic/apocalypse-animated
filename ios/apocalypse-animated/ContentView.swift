@@ -153,7 +153,29 @@ struct ChapterView: View {
     }
 }
 
+struct PageButtons: View {
+    @Binding var page: Int?
+    let maxPage: Int
+    
+    var body: some View {
+        HStack {
+            Button("←") {
+                if let page = self.page {
+                    self.page = page - 1
+                }
+            }.disabled(self.page == 0)
+            Button("→") {
+                if let page = self.page {
+                    self.page = page + 1
+                }
+            }.disabled(self.page == self.maxPage)
+        }
+    }
+}
+
 struct ContentView: View {
+    @State private var currentChapter: Int? = nil
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -161,14 +183,14 @@ struct ContentView: View {
                     Text("Apocalypse Animated").font(.title).padding()
                     ForEach(0..<Chapters.count) { id in
                         let chapter = Chapters[id]
-                        NavigationLink(destination: ChapterView(data: chapter)) {
+                        NavigationLink(destination: ChapterView(data: chapter).navigationBarItems(trailing: PageButtons(page: $currentChapter, maxPage: Chapters.count - 1)), tag: id, selection: $currentChapter) {
                             Text(chapter.title).padding()
                         }
                     }
                 }.frame(maxWidth: .infinity)
             }
-        // We're forcing a StackNavigationViewStyle because problems
-        // occur on larger devices (plus-sized iPhones, iPads) if we don't.
+            // We're forcing a StackNavigationViewStyle because problems
+            // occur on larger devices (plus-sized iPhones, iPads) if we don't.
         }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
