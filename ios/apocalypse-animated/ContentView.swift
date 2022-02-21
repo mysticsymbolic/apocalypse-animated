@@ -70,7 +70,9 @@ struct AnimationView: View {
     let video: String
     let width: Int
     let height: Int
-
+    let containerGeometry: GeometryProxy
+    let maxWidth: Double
+    
     var body: some View {
         let (width, height) = self.getSize()
         GeometryReader { geo in
@@ -85,13 +87,13 @@ struct AnimationView: View {
     
     private func isVisible(_ geo: GeometryProxy) -> Bool {
         let frame = geo.frame(in: .global)
-        return frame.intersects(UIScreen.main.bounds)
+        return frame.intersects(self.containerGeometry.frame(in: .global))
     }
     
     private func getSize() -> (CGFloat, CGFloat) {
-        let screenWidth = UIScreen.main.bounds.width
-        let height = (CGFloat(self.height) * screenWidth) / CGFloat(self.width)
-        return (screenWidth, height)
+        let containerWidth = min(self.containerGeometry.frame(in: .global).width, CGFloat(self.maxWidth))
+        let height = (CGFloat(self.height) * containerWidth) / CGFloat(self.width)
+        return (containerWidth, height)
     }
 }
 
@@ -120,16 +122,27 @@ struct ChapterView: View {
     let data: Chapter
     
     var body: some View {
-        ScrollView {
-            VStack {
-                Text(self.data.title).font(.title2).padding()
-                ForEach(0..<self.data.items.count) { id in
-                    let item = self.data.items[id]
-                    switch item {
-                    case .Verse(let number, let text):
-                        VerseView(number: number, text: text)
-                    case .Animation(let basename, let width, let height):
-                        AnimationView(video: basename, width: width, height: height)
+        let maxWidth = 640.0
+        GeometryReader { geo in
+            ScrollView {
+                HStack {
+                    if geo.size.width > maxWidth {
+                        Spacer()
+                    }
+                    VStack {
+                        Text(self.data.title).font(.title2).padding()
+                        ForEach(0..<self.data.items.count) { id in
+                            let item = self.data.items[id]
+                            switch item {
+                            case .Verse(let number, let text):
+                                VerseView(number: number, text: text)
+                            case .Animation(let basename, let width, let height):
+                                AnimationView(video: basename, width: width, height: height, containerGeometry: geo, maxWidth: maxWidth)
+                            }
+                        }
+                    }.frame(maxWidth: maxWidth)
+                    if geo.size.width > maxWidth {
+                        Spacer()
                     }
                 }
             }
