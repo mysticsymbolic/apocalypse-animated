@@ -76,20 +76,20 @@ struct AnimationView: View {
     var body: some View {
         let (width, height) = self.getSize()
         GeometryReader { geo in
-            let isVisible = self.isVisible(geo)
-            if isVisible {
-                LoopingVideo(video: self.video, isVisible: isVisible)
+            // We're testing to see if the animation is *almost* visible,
+            // which will help prevent any brief flickers where the movie is
+            // still loading while it's on-screen.
+            let isAlmostVisible = self.isVisible(geo, yDilation: 100.0)
+            if isAlmostVisible {
+                LoopingVideo(video: self.video, shouldPlay: self.isVisible(geo))
             } else {
                 EmptyView()
             }
         }.frame(width: width, height: height)
     }
     
-    private func isVisible(_ geo: GeometryProxy) -> Bool {
-        // We're actually testing to see if the animation is *almost* visible
-        // too, which will help prevent any brief flickers where the movie is
-        // still loading while it's on-screen.
-        let frame = geo.frame(in: .global).insetBy(dx: 0.0, dy: -100.0)
+    private func isVisible(_ geo: GeometryProxy, yDilation: Double = 0.0) -> Bool {
+        let frame = geo.frame(in: .global).insetBy(dx: 0.0, dy: -yDilation)
         return frame.intersects(self.containerGeometry.frame(in: .global))
     }
     

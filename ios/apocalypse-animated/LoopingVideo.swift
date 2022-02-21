@@ -12,17 +12,17 @@ struct LoopingVideo : UIViewRepresentable {
     typealias UIViewType = LoopingVideoUIView
     
     let video: String
-    let isVisible: Bool
+    let shouldPlay: Bool
     
     func updateUIView(_ uiView: LoopingVideoUIView, context: Context) {
-        uiView.setShouldPlay(self.isVisible)
+        uiView.setShouldPlay(self.shouldPlay)
     }
     
     func makeUIView(context: Context) -> LoopingVideoUIView {
         let myAsset: AVAsset = AVAsset(url: Bundle.main.url(forResource: "content/video/\(self.video)", withExtension: "mp4")!)
         let myPlayerItem = AVPlayerItem(asset: myAsset)
         
-        return LoopingVideoUIView(item: myPlayerItem, name: self.video)
+        return LoopingVideoUIView(item: myPlayerItem, name: self.video, shouldPlay: self.shouldPlay)
     }
 }
 
@@ -30,10 +30,11 @@ class LoopingVideoUIView : UIView {
     private let name: String
     private let playerLayer = AVPlayerLayer()
     private let player: AVPlayer
-    private var shouldPlay: Bool = true
+    private var shouldPlay: Bool
 
-    init(item: AVPlayerItem, name: String) {
+    init(item: AVPlayerItem, name: String, shouldPlay: Bool) {
         self.name = name
+        self.shouldPlay = shouldPlay
         player = AVPlayer(playerItem: item)
         super.init(frame: .zero)
         playerLayer.player = player
@@ -46,7 +47,8 @@ class LoopingVideoUIView : UIView {
         
         NotificationCenter.default.addObserver(self, selector: #selector(onApplicationDidBecomeActive(application:)), name: UIApplication.didBecomeActiveNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.onItemEndedPlaying(notification:)), name: .AVPlayerItemDidPlayToEndTime, object: nil)
-        print("Creating LoopingVideoUIView '\(self.name)'.")
+        let playState = self.shouldPlay ? "playing" : "paused"
+        print("Creating LoopingVideoUIView '\(self.name)' (\(playState)).")
     }
 
     func setShouldPlay(_ value: Bool) {
