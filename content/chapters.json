@@ -1,6 +1,7 @@
 [
     {
         "title": "Revelation 1",
+        "description": "John is Called",
         "items": [
             {
                 "type": "animation",
@@ -154,6 +155,7 @@
     },
     {
         "title": "Revelation 2",
+        "description": "Letters to 7 Churches of Asia. Few visuals.",
         "items": [
             {
                 "type": "animation",
@@ -382,6 +384,7 @@
     },
     {
         "title": "Revelation 3",
+        "description": "More Letters. Fewer visuals.",
         "items": [
             {
                 "type": "animation",
@@ -545,6 +548,7 @@
     },
     {
         "title": "Revelation 4",
+        "description": "John sees Heaven",
         "items": [
             {
                 "type": "animation",
@@ -652,6 +656,7 @@
     },
     {
         "title": "Revelation 5",
+        "description": "Book of 7 Seals and the Lamb",
         "items": [
             {
                 "type": "verse",
@@ -786,6 +791,7 @@
     },
     {
         "title": "Revelation 6",
+        "description": "The Lamb Opens Seals 1-6",
         "items": [
             {
                 "type": "animation",
@@ -994,6 +1000,7 @@
     },
     {
         "title": "Revelation 7",
+        "description": "Sealing of the Elect",
         "items": [
             {
                 "type": "animation",
@@ -1150,6 +1157,7 @@
     },
     {
         "title": "Revelation 8",
+        "description": "7th Seal, Trumpet Plagues 1-4",
         "items": [
             {
                 "type": "animation",
@@ -1342,6 +1350,7 @@
     },
     {
         "title": "Revelation 9",
+        "description": "Abyss, Locusts, Euphrates Angels, Horses",
         "items": [
             {
                 "type": "animation",
@@ -1560,6 +1569,7 @@
     },
     {
         "title": "Revelation 10",
+        "description": "Sun-Faced Angel & the Little Book",
         "items": [
             {
                 "type": "verse",
@@ -1680,6 +1690,7 @@
     },
     {
         "title": "Revelation 11",
+        "description": "The 2 Witnesses",
         "items": [
             {
                 "type": "verse",
@@ -1870,6 +1881,7 @@
     },
     {
         "title": "Revelation 12",
+        "description": "The Woman & the Dragon",
         "items": [
             {
                 "type": "verse",
@@ -2066,6 +2078,7 @@
     },
     {
         "title": "Revelation 13",
+        "description": "Sea Beast and Earth Beast",
         "items": [
             {
                 "type": "verse",
@@ -2263,6 +2276,7 @@
     },
     {
         "title": "Revelation 14",
+        "description": "God’s Wrath, Scythes, & Winepress",
         "items": [
             {
                 "type": "verse",
@@ -2470,6 +2484,7 @@
     },
     {
         "title": "Revelation 15",
+        "description": "Vial Angels, Lake of Glass & Fire",
         "items": [
             {
                 "type": "verse",
@@ -2563,6 +2578,7 @@
     },
     {
         "title": "Revelation 16",
+        "description": "7 Plagues of the Vial Angels",
         "items": [
             {
                 "type": "animation",
@@ -2799,6 +2815,7 @@
     },
     {
         "title": "Revelation 17",
+        "description": "The Whore of Babylon",
         "items": [
             {
                 "type": "verse",
@@ -3001,6 +3018,7 @@
     },
     {
         "title": "Revelation 18",
+        "description": "The Fall of Babylon",
         "items": [
             {
                 "type": "verse",
@@ -3240,6 +3258,7 @@
     },
     {
         "title": "Revelation 19",
+        "description": "Victory; The Lamb’s Wedding Invitation",
         "items": [
             {
                 "type": "verse",
@@ -3475,6 +3494,7 @@
     },
     {
         "title": "Revelation 20",
+        "description": "Satan Bound; Millennium; Judgement",
         "items": [
             {
                 "type": "verse",
@@ -3672,6 +3692,7 @@
     },
     {
         "title": "Revelation 21",
+        "description": "New Jerusalem, Bride of The Lamb",
         "items": [
             {
                 "type": "verse",
@@ -3926,6 +3947,7 @@
     },
     {
         "title": "Revelation 22",
+        "description": "River of Life; The End",
         "items": [
             {
                 "type": "verse",

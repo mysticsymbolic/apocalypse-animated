@@ -17,7 +17,8 @@ type ChapterItem = {
 };
 
 type Chapter = {
-    title: String;
+    title: string;
+    description: string;
     items: ChapterItem[];
 };
 
@@ -174,8 +175,11 @@ async function main() {
         if (!title) {
             throw new Error('<a> has no text?!');
         }
+        link.remove();
+        const description = $(li).text().replace(' – ', '');
         const chapter: Chapter = {
             title,
+            description,
             items: []
         };
         const filename = `${title.replace(/\s/g, '-').toLowerCase()}.html`;

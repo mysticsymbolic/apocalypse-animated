@@ -63,6 +63,7 @@ let Chapters: [Chapter] = load("content/chapters.json")
 
 struct Chapter: Decodable {
     let title: String
+    let description: String
     let items: [ChapterItem]
 }
 
@@ -184,8 +185,9 @@ struct ContentView: View {
                     ForEach(0..<Chapters.count) { id in
                         let chapter = Chapters[id]
                         NavigationLink(destination: ChapterView(data: chapter).navigationBarItems(trailing: PageButtons(page: $currentChapter, maxPage: Chapters.count - 1)), tag: id, selection: $currentChapter) {
-                            Text(chapter.title).padding()
+                            Text(chapter.title).padding([.top, .leading, .trailing])
                         }
+                        Text(chapter.description).padding([.bottom]).foregroundColor(.gray)
                     }
                 }.frame(maxWidth: .infinity)
             }
