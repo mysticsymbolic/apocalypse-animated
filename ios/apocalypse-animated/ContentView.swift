@@ -164,7 +164,9 @@ struct ContentView: View {
                     }
                 }.frame(maxWidth: .infinity)
             }
-        }
+        // We're forcing a StackNavigationViewStyle because problems
+        // occur on larger devices (plus-sized iPhones, iPads) if we don't.
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
