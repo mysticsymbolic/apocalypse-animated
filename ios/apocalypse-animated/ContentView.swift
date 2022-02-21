@@ -95,7 +95,13 @@ struct AnimationView: View {
     }
     
     private func getSize() -> (CGFloat, CGFloat) {
-        let containerWidth = min(self.containerGeometry.frame(in: .global).width, CGFloat(self.maxWidth))
+        // This helps ensure that the animation actually
+        // goes edge-to-edge, i.e. that we don't have tiny
+        // subpixel slivers of empty space between the
+        // animation and the edge of the screen.
+        let EXTRA_WIDTH = 0.5
+
+        let containerWidth = min(self.containerGeometry.frame(in: .global).width, CGFloat(self.maxWidth)) + EXTRA_WIDTH
         let height = (CGFloat(self.height) * containerWidth) / CGFloat(self.width)
         return (containerWidth, height)
     }
