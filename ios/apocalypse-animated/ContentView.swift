@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum ChapterItem: Decodable {
-    case Verse(number: Int, text: String)
+    case Verse(number: Int?, text: String)
     case Animation(basename: String, width: Int, height: Int)
     
     enum CodingKeys: String, CodingKey {
@@ -25,7 +25,7 @@ enum ChapterItem: Decodable {
         
         switch type {
         case .verse:
-            let number = try container.decode(Int.self, forKey: .number)
+            let number = try container.decode(Int?.self, forKey: .number)
             let text = try container.decode(String.self, forKey: .text)
             self = .Verse(number: number, text: text)
         case .animation:
@@ -108,14 +108,21 @@ struct AnimationView: View {
 }
 
 struct VerseView: View {
-    let number: Int
+    let number: Int?
     let text: String
     
     var body: some View {
         HStack(alignment: .firstTextBaseline) {
-            Text(String(self.number)).baselineOffset(4.0).padding([.top, .leading]).font(.system(size: 12.0))
+            Text(self.getNumberStr()).baselineOffset(4.0).padding([.top, .leading]).font(.system(size: 12.0))
             Text(self.text).padding().frame(maxWidth: .infinity, alignment: .leading)
         }
+    }
+    
+    private func getNumberStr() -> String {
+        if let number = self.number {
+            return String(number)
+        }
+        return ""
     }
 }
 
@@ -124,6 +131,7 @@ struct VerseView_Previews: PreviewProvider {
         VStack {
             VerseView(number: 1, text: "I am Alpha and Omega, the beginning and the ending, saith the Lord, which is, and which was, and which is to come, the Almighty.")
             VerseView(number: 2, text: "I am a tiny verse.")
+            VerseView(number: nil, text: "I am a continuation of the last verse.")
         }
     }
 }

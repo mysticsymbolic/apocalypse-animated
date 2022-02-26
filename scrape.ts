@@ -7,7 +7,7 @@ import fetch, {Response} from "node-fetch";
 
 type ChapterItem = {
     type: "verse",
-    number: number,
+    number: number|null,
     text: string
 } | {
     type: "animation",
@@ -31,6 +31,22 @@ const CACHE_DIR = path.join(ROOT_DIR, '.cache');
 const CONTENT_DIR = path.join(ROOT_DIR, 'content');
 
 const CONTENT_VIDEO_DIR = path.join(CONTENT_DIR, 'video');
+
+function parseVerseNumber(el: cheerio.Cheerio<cheerio.Element>): number|null {
+    if (el.length === 1) {
+        const text = el.text().trim();
+        const verseNumber = parseInt(text);
+        if (isNaN(verseNumber) || verseNumber <= 0) {
+            console.log(`WARNING: Invalid verse number: "${text}"`);
+        } else {
+            return verseNumber;
+        }
+    } else if (el.length > 1) {
+        console.log(`WARNING: Found ${el.length} potential verse numbers.`);
+    }
+
+    return null;
+}
 
 function ensureDirExistsForFile(filename: string) {
     const dirname = path.dirname(filename);
@@ -105,12 +121,11 @@ async function scrapeChapter(chapter: Chapter, html: string): Promise<Chapter> {
 
     const items = $('figure > img, p');
 
-    let verseNumber = 0;
-
     for (let item of items) {
         if (item.name === 'p') {
-            verseNumber += 1;
-            $('sup, strong', item).remove();
+            const verseNumberEl = $('sup, strong', item);
+            const verseNumber = parseVerseNumber(verseNumberEl);
+            verseNumberEl.remove();
             const text = $(item).text();
             if (!text) {
                 console.log(`WARNING: Found <p> without text!`);
