@@ -32,6 +32,12 @@ const CONTENT_DIR = path.join(ROOT_DIR, 'content');
 
 const CONTENT_VIDEO_DIR = path.join(CONTENT_DIR, 'video');
 
+const RAW_4K_VIDEO_DIR = path.join(ROOT_DIR, '4k');
+
+const HAS_RAW_4K_VIDEO_DIR = fs.existsSync(RAW_4K_VIDEO_DIR);
+
+const RAW_4K_DOWNSAMPLE_HEIGHT = 720;
+
 function parseVerseNumber(el: cheerio.Cheerio<cheerio.Element>): number|null {
     if (el.length === 1) {
         const text = el.text().trim();
@@ -47,6 +53,27 @@ function parseVerseNumber(el: cheerio.Cheerio<cheerio.Element>): number|null {
 
     return null;
 }
+
+// https://www.30secondsofcode.org/js/s/levenshtein-distance
+const levenshteinDistance = (s: string, t: string): number => {
+  if (!s.length) return t.length;
+  if (!t.length) return s.length;
+  const arr = [];
+  for (let i = 0; i <= t.length; i++) {
+    arr[i] = [i];
+    for (let j = 1; j <= s.length; j++) {
+      arr[i][j] =
+        i === 0
+          ? j
+          : Math.min(
+              arr[i - 1][j] + 1,
+              arr[i][j - 1] + 1,
+              arr[i - 1][j - 1] + (s[j - 1] === t[i - 1] ? 0 : 1)
+            );
+    }
+  }
+  return arr[t.length][s.length];
+};
 
 function ensureDirExistsForFile(filename: string) {
     const dirname = path.dirname(filename);
@@ -66,6 +93,73 @@ function readTextFile(filename: string): string {
 
 function rootRelativePosixPath(absPath: string): string {
     return path.relative(ROOT_DIR, absPath).replace(/\\/g, path.posix.sep);
+}
+
+function getRaw4kVideoFiles(): Map<string, string> {
+    const files = new Map<string, string>();
+
+    for (const dirname of fs.readdirSync(RAW_4K_VIDEO_DIR)) {
+        const absDirname = path.join(RAW_4K_VIDEO_DIR, dirname);
+        if (dirname.startsWith('Rev') && fs.statSync(absDirname).isDirectory()) {
+            for (const movname of fs.readdirSync(absDirname)) {
+                const absMovname = path.join(absDirname, movname);
+                const ext = path.extname(movname);
+                if (ext === '.mov') {
+                    const stem = path.basename(movname, ext).toLowerCase();
+                    if (files.has(stem)) {
+                        throw new Error(`Multiple entries for 4k movie "${stem}"!`);
+                    }
+                    files.set(stem, absMovname);
+                }
+            }
+        }
+    }
+
+    return files;
+}
+
+function findClosestString(source: string, candidates: IterableIterator<string>): string {
+    let bestCandidate: string|undefined;
+    let bestDistance = Infinity;
+
+    for (const candidate of candidates) {
+        const distance = levenshteinDistance(source, candidate);
+        if (distance < bestDistance) {
+            bestCandidate = candidate;
+            bestDistance = distance;
+        }
+    }
+
+    if (bestCandidate === undefined) {
+        throw new Error(`Must have at least one candidate!`);
+    }
+
+    return bestCandidate;
+}
+
+let cachedRaw4kVideoFiles: Map<string, string>|undefined;
+
+function convert4kToMp4(stem: string, absMp4Path: string) {
+    if (!cachedRaw4kVideoFiles) {
+        cachedRaw4kVideoFiles = getRaw4kVideoFiles();
+    }
+
+    let absMovPath = cachedRaw4kVideoFiles.get(stem);
+    if (!absMovPath) {
+        const closestMatch = findClosestString(stem, cachedRaw4kVideoFiles.keys());
+        console.log(`No exact 4k video match found for movie "${stem}", using "${closestMatch}".`);
+        absMovPath = cachedRaw4kVideoFiles.get(closestMatch);
+        if (!absMovPath) {
+            throw new Error(`Assertion failure, closest match must have an entry!`);
+        }
+    }
+
+    const relMovPath = rootRelativePosixPath(absMovPath);
+    const relMp4Path = rootRelativePosixPath(absMp4Path);
+    const ffmpegCmdline = `ffmpeg -i '${relMovPath}' -movflags faststart -pix_fmt yuv420p -vf scale=-2:${RAW_4K_DOWNSAMPLE_HEIGHT} ${relMp4Path}`
+    console.log(`Converting ${relMovPath} -> ${relMp4Path}.`);
+    // Running this through bash to support running a WSL2-based ffmpeg on Windows.
+    child_process.execSync(`bash -c "${ffmpegCmdline}"`);
 }
 
 function convertGifToMp4(absGifPath: string, absMp4Path: string) {
@@ -158,8 +252,12 @@ async function scrapeChapter(chapter: Chapter, html: string): Promise<Chapter> {
             const absMp4Path = path.join(CONTENT_VIDEO_DIR, mp4Filename);
 
             if (!fs.existsSync(absMp4Path)) {
-                const absGifPath = await cacheBinaryFile(src, filename);
-                convertGifToMp4(absGifPath, absMp4Path);
+                if (HAS_RAW_4K_VIDEO_DIR) {
+                    convert4kToMp4(stem, absMp4Path);
+                } else {
+                    const absGifPath = await cacheBinaryFile(src, filename);
+                    convertGifToMp4(absGifPath, absMp4Path);
+                }
             }
 
             chapter.items.push({

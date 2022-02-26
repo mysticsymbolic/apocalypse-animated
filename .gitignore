@@ -1,5 +1,8 @@
 node_modules/
 
+## Optional raw 4k video.
+4k/
+
 ## Generated TypeScript files.
 *.js
 
