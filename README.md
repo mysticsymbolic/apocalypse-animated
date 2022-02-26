@@ -1,11 +1,15 @@
-This is an attempt to make Nina Paley's [Apocalypse Animated](https://apocalypseanimated.com) into an iOS app.
+This is an attempt to make Nina Paley's [Apocalypse Animated](https://apocalypseanimated.com) into a mobile app.
 
-## Converting animated GIF to mp4
+## Quick start
 
-This can be done via e.g.:
+Open `ios/apocalypse-animated.xcodeproj` in XCode.
+
+## Downloading content
+
+A scraper downloads content from the Apocalypse Animated website and parses it into data used by the mobile app. Whenever it changes, you may need to re-run the scraper:
 
 ```
-ffmpeg -i Throne2_5.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" throne2_5.mp4
+rm -rf .cache   # Obliterate any previously downloaded data.
+npm run build   # Or `npm run watch` if you want to iterate on the scraper.
+node scrape.js
 ```
-
-For more details see [this gist](https://gist.github.com/gvoze32/95f96992a443e73c4794c342a44e0811).
