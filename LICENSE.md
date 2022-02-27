@@ -2,12 +2,12 @@
 
 ## Art
 
-[CC BY 4.0 License][cc-by]
+[CC BY SA 4.0 License][cc-by-sa]
 
-The CC BY 4.0 license applies to all MP4 files, which should be attributed
+The CC BY SA 4.0 license applies to all video files, which should be attributed
 to Nina Paley.
 
-[cc-by]: https://creativecommons.org/licenses/by/4.0/
+[cc-by-sa]: https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Code
 
