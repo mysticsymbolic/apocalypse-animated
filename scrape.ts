@@ -236,7 +236,7 @@ async function scrapeChapter(chapter: Chapter, html: string): Promise<Chapter> {
             const verseNumberEl = $('sup, strong', item);
             const verseNumber = parseVerseNumber(verseNumberEl);
             verseNumberEl.remove();
-            const text = $(item).text();
+            const text = $(item).text().trim();
             if (!text) {
                 console.log(`WARNING: Found <p> without text!`);
                 continue;
