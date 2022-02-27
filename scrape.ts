@@ -40,6 +40,12 @@ const RAW_4K_DOWNSAMPLE_HEIGHT = 720;
 
 const GET_DIMENSIONS_FROM_MP4 = true;
 
+const GIF_TO_RAW_4K_OVERRIDES = new Map<string, string>([
+    // https://github.com/mysticsymbolic/apocalypse-animated/issues/14
+    ["lake_of_glass7_2", "lake_of_glass7"],
+    ["lake_of_glass2_5", "lake_of_glass2"]
+]);
+
 function parseVerseNumber(el: cheerio.Cheerio<cheerio.Element>): number|null {
     if (el.length === 1) {
         const text = el.text().trim();
@@ -147,6 +153,15 @@ function convert4kToMp4(stem: string, absMp4Path: string) {
     }
 
     let absMovPath = cachedRaw4kVideoFiles.get(stem);
+    if (!absMovPath) {
+        const newStem = GIF_TO_RAW_4K_OVERRIDES.get(stem);
+        if (newStem) {
+            absMovPath = cachedRaw4kVideoFiles.get(newStem);
+            if (!absMovPath) {
+                throw new Error(`Assertion failure, 4k video should exist for "${newStem}"`);
+            }
+        }
+    }
     if (!absMovPath) {
         const closestMatch = findClosestString(stem, cachedRaw4kVideoFiles.keys());
         console.log(`No exact 4k video match found for movie "${stem}", using "${closestMatch}".`);
