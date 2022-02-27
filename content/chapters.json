@@ -6,8 +6,8 @@
             {
                 "type": "animation",
                 "basename": "4star-cross_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -27,8 +27,8 @@
             {
                 "type": "animation",
                 "basename": "cathedral_scale_cycle",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -53,8 +53,8 @@
             {
                 "type": "animation",
                 "basename": "alpha_omega2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -69,8 +69,8 @@
             {
                 "type": "animation",
                 "basename": "john_trumpet4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -85,8 +85,8 @@
             {
                 "type": "animation",
                 "basename": "john_writes",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -96,8 +96,8 @@
             {
                 "type": "animation",
                 "basename": "christmorphs-menorah2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -117,8 +117,8 @@
             {
                 "type": "animation",
                 "basename": "son_of_man3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -143,8 +143,8 @@
             {
                 "type": "animation",
                 "basename": "stars_churches_4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -160,8 +160,8 @@
             {
                 "type": "animation",
                 "basename": "spot_winged_church_1",
-                "width": 360,
-                "height": 240
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -171,8 +171,8 @@
             {
                 "type": "animation",
                 "basename": "menorah_sonofman",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -192,8 +192,8 @@
             {
                 "type": "animation",
                 "basename": "menorah_snuff",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -208,8 +208,8 @@
             {
                 "type": "animation",
                 "basename": "spot_illo_ear2",
-                "width": 640,
-                "height": 240
+                "width": 1920,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -219,8 +219,8 @@
             {
                 "type": "animation",
                 "basename": "spot_winged_church_1",
-                "width": 360,
-                "height": 240
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -235,8 +235,8 @@
             {
                 "type": "animation",
                 "basename": "crown_of_life2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -246,8 +246,8 @@
             {
                 "type": "animation",
                 "basename": "spot_illo_ear2",
-                "width": 640,
-                "height": 240
+                "width": 1920,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -257,8 +257,8 @@
             {
                 "type": "animation",
                 "basename": "spot_winged_church_1",
-                "width": 360,
-                "height": 240
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -288,8 +288,8 @@
             {
                 "type": "animation",
                 "basename": "spot_illo_ear2",
-                "width": 640,
-                "height": 240
+                "width": 1920,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -299,8 +299,8 @@
             {
                 "type": "animation",
                 "basename": "spot_winged_church_1",
-                "width": 360,
-                "height": 240
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -310,8 +310,8 @@
             {
                 "type": "animation",
                 "basename": "spot_illo_eyes_like_fire-1",
-                "width": 640,
-                "height": 180
+                "width": 2560,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -356,8 +356,8 @@
             {
                 "type": "animation",
                 "basename": "potters_vessels",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -377,8 +377,8 @@
             {
                 "type": "animation",
                 "basename": "spot_illo_ear2",
-                "width": 640,
-                "height": 240
+                "width": 1920,
+                "height": 720
             }
         ]
     },
@@ -389,8 +389,8 @@
             {
                 "type": "animation",
                 "basename": "spot_winged_church_1",
-                "width": 360,
-                "height": 240
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -420,8 +420,8 @@
             {
                 "type": "animation",
                 "basename": "spot_illo_ear2",
-                "width": 640,
-                "height": 240
+                "width": 1920,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -431,8 +431,8 @@
             {
                 "type": "animation",
                 "basename": "spot_winged_church_1",
-                "width": 360,
-                "height": 240
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -457,8 +457,8 @@
             {
                 "type": "animation",
                 "basename": "key_crown_2",
-                "width": 480,
-                "height": 270
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -473,8 +473,8 @@
             {
                 "type": "animation",
                 "basename": "spot_illo_ear2",
-                "width": 640,
-                "height": 240
+                "width": 1920,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -484,8 +484,8 @@
             {
                 "type": "animation",
                 "basename": "spot_winged_church_1",
-                "width": 360,
-                "height": 240
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -505,8 +505,8 @@
             {
                 "type": "animation",
                 "basename": "spue2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -541,8 +541,8 @@
             {
                 "type": "animation",
                 "basename": "spot_illo_ear2",
-                "width": 640,
-                "height": 240
+                "width": 1920,
+                "height": 720
             }
         ]
     },
@@ -553,8 +553,8 @@
             {
                 "type": "animation",
                 "basename": "door",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -569,8 +569,8 @@
             {
                 "type": "animation",
                 "basename": "throne2_5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -580,8 +580,8 @@
             {
                 "type": "animation",
                 "basename": "elders5_7",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -596,19 +596,19 @@
             {
                 "type": "animation",
                 "basename": "lake_of_glass7_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": 6,
-                "text": "And before the throne there was a sea of glass like unto crystal: "
+                "text": "And before the throne there was a sea of glass like unto crystal:"
             },
             {
                 "type": "animation",
                 "basename": "lake_of_glass2_5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -618,8 +618,8 @@
             {
                 "type": "animation",
                 "basename": "eye_wing5_3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -639,8 +639,8 @@
             {
                 "type": "animation",
                 "basename": "elders_falling2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -666,8 +666,8 @@
             {
                 "type": "animation",
                 "basename": "book3_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -677,8 +677,8 @@
             {
                 "type": "animation",
                 "basename": "book_unseals_1",
-                "width": 360,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -693,8 +693,8 @@
             {
                 "type": "animation",
                 "basename": "lion_to_lamb3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -704,8 +704,8 @@
             {
                 "type": "animation",
                 "basename": "lamb5_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -715,8 +715,8 @@
             {
                 "type": "animation",
                 "basename": "lamb_gets_book2_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -726,19 +726,19 @@
             {
                 "type": "animation",
                 "basename": "lamb_book_creatures2_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": 8,
-                "text": "And when he had taken the book, the four beasts and four and twenty elders fell down before the Lamb, "
+                "text": "And when he had taken the book, the four beasts and four and twenty elders fell down before the Lamb,"
             },
             {
                 "type": "animation",
                 "basename": "lamb_book_elders_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -748,8 +748,8 @@
             {
                 "type": "animation",
                 "basename": "elder_harp_vial5_5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -769,8 +769,8 @@
             {
                 "type": "animation",
                 "basename": "lamb_eyes_circle_9",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -796,8 +796,8 @@
             {
                 "type": "animation",
                 "basename": "first_seal_5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -807,8 +807,8 @@
             {
                 "type": "animation",
                 "basename": "first_horseman",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -818,8 +818,8 @@
             {
                 "type": "animation",
                 "basename": "second_seal_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -829,8 +829,8 @@
             {
                 "type": "animation",
                 "basename": "second_horseman",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -840,8 +840,8 @@
             {
                 "type": "animation",
                 "basename": "third_seal2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -851,8 +851,8 @@
             {
                 "type": "animation",
                 "basename": "third_horseman",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -862,8 +862,8 @@
             {
                 "type": "animation",
                 "basename": "fourth_seal_3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -873,19 +873,19 @@
             {
                 "type": "animation",
                 "basename": "fourth_horseman",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": 8,
-                "text": "And I looked, and behold a pale horse: and his name that sat on him was Death, and Hell followed with him. "
+                "text": "And I looked, and behold a pale horse: and his name that sat on him was Death, and Hell followed with him."
             },
             {
                 "type": "animation",
                 "basename": "horsemen6",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -895,8 +895,8 @@
             {
                 "type": "animation",
                 "basename": "fifth_seal_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -906,8 +906,8 @@
             {
                 "type": "animation",
                 "basename": "altar3_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -917,8 +917,8 @@
             {
                 "type": "animation",
                 "basename": "altar_white_robes2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -928,19 +928,19 @@
             {
                 "type": "animation",
                 "basename": "sixth_seal_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": 12,
-                "text": "And I beheld when he had opened the sixth seal, and, lo, there was a great earthquake; "
+                "text": "And I beheld when he had opened the sixth seal, and, lo, there was a great earthquake;"
             },
             {
                 "type": "animation",
                 "basename": "sun_turns_black_3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -950,8 +950,8 @@
             {
                 "type": "animation",
                 "basename": "moon_turns_red_4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -961,8 +961,8 @@
             {
                 "type": "animation",
                 "basename": "fig_tree2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -972,8 +972,8 @@
             {
                 "type": "animation",
                 "basename": "scroll3_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -988,8 +988,8 @@
             {
                 "type": "animation",
                 "basename": "wrath_of_lamb2_3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1005,8 +1005,8 @@
             {
                 "type": "animation",
                 "basename": "angels_wind3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1016,8 +1016,8 @@
             {
                 "type": "animation",
                 "basename": "seal8_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1027,8 +1027,8 @@
             {
                 "type": "animation",
                 "basename": "earth_sea_trees_9",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1038,8 +1038,8 @@
             {
                 "type": "animation",
                 "basename": "sealing_hebrews3_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1049,8 +1049,8 @@
             {
                 "type": "animation",
                 "basename": "144000_sealed_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1075,8 +1075,8 @@
             {
                 "type": "animation",
                 "basename": "sealed_hebrews_mandala3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1096,8 +1096,8 @@
             {
                 "type": "animation",
                 "basename": "angels_bowing3_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1112,8 +1112,8 @@
             {
                 "type": "animation",
                 "basename": "john_elder_sealed_3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1123,8 +1123,8 @@
             {
                 "type": "animation",
                 "basename": "lamb_blood_wash3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1134,8 +1134,8 @@
             {
                 "type": "animation",
                 "basename": "throne_with_men_bw",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1150,8 +1150,8 @@
             {
                 "type": "animation",
                 "basename": "wipe_away_tears",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     },
@@ -1162,8 +1162,8 @@
             {
                 "type": "animation",
                 "basename": "seventh_seal2_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1173,8 +1173,8 @@
             {
                 "type": "animation",
                 "basename": "trumpet_angels2_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1189,8 +1189,8 @@
             {
                 "type": "animation",
                 "basename": "censer2_9",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1200,19 +1200,19 @@
             {
                 "type": "animation",
                 "basename": "censer_throw3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": 5,
-                "text": "And the angel took the censer, and filled it with fire of the altar, and cast it into the earth: "
+                "text": "And the angel took the censer, and filled it with fire of the altar, and cast it into the earth:"
             },
             {
                 "type": "animation",
                 "basename": "censer_falling3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1222,8 +1222,8 @@
             {
                 "type": "animation",
                 "basename": "thunder_lightning2_4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1233,8 +1233,8 @@
             {
                 "type": "animation",
                 "basename": "trumpet_angels_blow_4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1244,8 +1244,8 @@
             {
                 "type": "animation",
                 "basename": "tree_burn5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1255,8 +1255,8 @@
             {
                 "type": "animation",
                 "basename": "burning_mountain_sea4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1266,8 +1266,8 @@
             {
                 "type": "animation",
                 "basename": "blood_sea3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1277,8 +1277,8 @@
             {
                 "type": "animation",
                 "basename": "star_wormwood2_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1288,19 +1288,19 @@
             {
                 "type": "animation",
                 "basename": "wormwood_waters4_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": 12,
-                "text": "And the fourth angel sounded, and the third part of the sun was smitten, "
+                "text": "And the fourth angel sounded, and the third part of the sun was smitten,"
             },
             {
                 "type": "animation",
                 "basename": "sun_third_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1310,30 +1310,30 @@
             {
                 "type": "animation",
                 "basename": "moon_third_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": null,
-                "text": " and the third part of the stars;"
+                "text": "and the third part of the stars;"
             },
             {
                 "type": "animation",
                 "basename": "stars_thirds3_5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": null,
-                "text": " so as the third part of them was darkened, and the day shone not for a third part of it, and the night likewise."
+                "text": "so as the third part of them was darkened, and the day shone not for a third part of it, and the night likewise."
             },
             {
                 "type": "animation",
                 "basename": "sunmoonstars_thirds2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1343,8 +1343,8 @@
             {
                 "type": "animation",
                 "basename": "trumpet_angel_side",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     },
@@ -1355,8 +1355,8 @@
             {
                 "type": "animation",
                 "basename": "abyss6_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1366,8 +1366,8 @@
             {
                 "type": "animation",
                 "basename": "abyss_unlocked3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1377,8 +1377,8 @@
             {
                 "type": "animation",
                 "basename": "abyss_opens4_1-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1388,8 +1388,8 @@
             {
                 "type": "animation",
                 "basename": "abyss_locusts_faster2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1399,8 +1399,8 @@
             {
                 "type": "animation",
                 "basename": "locust_target5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1410,8 +1410,8 @@
             {
                 "type": "animation",
                 "basename": "locust_strike4_4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1421,8 +1421,8 @@
             {
                 "type": "animation",
                 "basename": "locust_horse3_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1437,8 +1437,8 @@
             {
                 "type": "animation",
                 "basename": "locust_teeth_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1453,8 +1453,8 @@
             {
                 "type": "animation",
                 "basename": "5_months2_3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1464,8 +1464,8 @@
             {
                 "type": "animation",
                 "basename": "abaddon_locusts2_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1480,8 +1480,8 @@
             {
                 "type": "animation",
                 "basename": "altar_4_horns4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1491,8 +1491,8 @@
             {
                 "type": "animation",
                 "basename": "euphrates_angels_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1502,8 +1502,8 @@
             {
                 "type": "animation",
                 "basename": "angels_moons_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1513,8 +1513,8 @@
             {
                 "type": "animation",
                 "basename": "army_of_horsemen2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1524,8 +1524,8 @@
             {
                 "type": "animation",
                 "basename": "lion_horse_sword_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1535,8 +1535,8 @@
             {
                 "type": "animation",
                 "basename": "lion_fire_closeup2_4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1546,8 +1546,8 @@
             {
                 "type": "animation",
                 "basename": "lion_tail_closeup3_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1562,8 +1562,8 @@
             {
                 "type": "animation",
                 "basename": "unrepentant_sinners2_7",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     },
@@ -1579,8 +1579,8 @@
             {
                 "type": "animation",
                 "basename": "sun_angel3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1595,8 +1595,8 @@
             {
                 "type": "animation",
                 "basename": "7_thunders2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1606,8 +1606,8 @@
             {
                 "type": "animation",
                 "basename": "sealed_thunders2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1617,8 +1617,8 @@
             {
                 "type": "animation",
                 "basename": "sun_angel3_lifts_hand_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1628,8 +1628,8 @@
             {
                 "type": "animation",
                 "basename": "throne2_5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1639,8 +1639,8 @@
             {
                 "type": "animation",
                 "basename": "angel_little_book2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1650,8 +1650,8 @@
             {
                 "type": "animation",
                 "basename": "john_angel_book_5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1661,8 +1661,8 @@
             {
                 "type": "animation",
                 "basename": "john_eats_book_7",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1672,8 +1672,8 @@
             {
                 "type": "animation",
                 "basename": "john_stomach3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1683,8 +1683,8 @@
             {
                 "type": "animation",
                 "basename": "john_prophecies_dither",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     },
@@ -1700,8 +1700,8 @@
             {
                 "type": "animation",
                 "basename": "john_rod_angel3_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1716,8 +1716,8 @@
             {
                 "type": "animation",
                 "basename": "witnesses_angel_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1727,8 +1727,8 @@
             {
                 "type": "animation",
                 "basename": "olivetree_lampstand3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1738,8 +1738,8 @@
             {
                 "type": "animation",
                 "basename": "firebreathing_prophets_1-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1749,8 +1749,8 @@
             {
                 "type": "animation",
                 "basename": "witnesses_powers4_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1760,8 +1760,8 @@
             {
                 "type": "animation",
                 "basename": "beast_vanquish_witnesses_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1776,8 +1776,8 @@
             {
                 "type": "animation",
                 "basename": "bodies_in_street_5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1792,8 +1792,8 @@
             {
                 "type": "animation",
                 "basename": "spirit_of_life3-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1803,8 +1803,8 @@
             {
                 "type": "animation",
                 "basename": "ascent_on_cloud2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1814,8 +1814,8 @@
             {
                 "type": "animation",
                 "basename": "earthquake",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1830,8 +1830,8 @@
             {
                 "type": "animation",
                 "basename": "seventh_angel_4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1841,8 +1841,8 @@
             {
                 "type": "animation",
                 "basename": "elders_falling_8",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1852,8 +1852,8 @@
             {
                 "type": "animation",
                 "basename": "elders5_7",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1863,8 +1863,8 @@
             {
                 "type": "animation",
                 "basename": "temple_tesseract_throne_3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1874,8 +1874,8 @@
             {
                 "type": "animation",
                 "basename": "lightning_earthquake_hail_6",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     },
@@ -1891,8 +1891,8 @@
             {
                 "type": "animation",
                 "basename": "womanapocalypse2",
-                "width": 640,
-                "height": 640
+                "width": 720,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1907,19 +1907,19 @@
             {
                 "type": "animation",
                 "basename": "dragon_wave4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": 4,
-                "text": "And his tail drew the third part of the stars of heaven, and did cast them to the earth: "
+                "text": "And his tail drew the third part of the stars of heaven, and did cast them to the earth:"
             },
             {
                 "type": "animation",
                 "basename": "dragon_stars4_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1929,8 +1929,8 @@
             {
                 "type": "animation",
                 "basename": "woman_dragon_nowings",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1940,8 +1940,8 @@
             {
                 "type": "animation",
                 "basename": "child_caught_up4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1951,19 +1951,19 @@
             {
                 "type": "animation",
                 "basename": "woman_wilderness3_1-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": 7,
-                "text": "And there was war in heaven: "
+                "text": "And there was war in heaven:"
             },
             {
                 "type": "animation",
                 "basename": "swords_fly_out2_7",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1973,8 +1973,8 @@
             {
                 "type": "animation",
                 "basename": "war_in_heaven_8",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -1989,8 +1989,8 @@
             {
                 "type": "animation",
                 "basename": "dragon_cast_out2_8",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2005,8 +2005,8 @@
             {
                 "type": "animation",
                 "basename": "rejoice_ye_heavens3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2016,8 +2016,8 @@
             {
                 "type": "animation",
                 "basename": "dragon_earth2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2027,8 +2027,8 @@
             {
                 "type": "animation",
                 "basename": "woman_persecuted4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2038,8 +2038,8 @@
             {
                 "type": "animation",
                 "basename": "woman_wings2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2049,8 +2049,8 @@
             {
                 "type": "animation",
                 "basename": "dragon_water5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2060,8 +2060,8 @@
             {
                 "type": "animation",
                 "basename": "earth_swallows_water2_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2071,8 +2071,8 @@
             {
                 "type": "animation",
                 "basename": "dragon_wave_plain_3",
-                "width": 640,
-                "height": 240
+                "width": 1920,
+                "height": 720
             }
         ]
     },
@@ -2088,8 +2088,8 @@
             {
                 "type": "animation",
                 "basename": "beast_sea2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2099,8 +2099,8 @@
             {
                 "type": "animation",
                 "basename": "beast_dragon3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2110,8 +2110,8 @@
             {
                 "type": "animation",
                 "basename": "beast_headwound_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2121,8 +2121,8 @@
             {
                 "type": "animation",
                 "basename": "men_worship_beast_dragon6",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2132,8 +2132,8 @@
             {
                 "type": "animation",
                 "basename": "beast_blasphemies2_3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2143,8 +2143,8 @@
             {
                 "type": "animation",
                 "basename": "blasphemy_god_tabernacle2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2154,8 +2154,8 @@
             {
                 "type": "animation",
                 "basename": "beast_venerated4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2165,8 +2165,8 @@
             {
                 "type": "animation",
                 "basename": "beast_sinners_mandala2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2176,8 +2176,8 @@
             {
                 "type": "animation",
                 "basename": "spot_illo_ear2",
-                "width": 640,
-                "height": 240
+                "width": 1920,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2192,8 +2192,8 @@
             {
                 "type": "animation",
                 "basename": "earth_beast_rise2_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2203,8 +2203,8 @@
             {
                 "type": "animation",
                 "basename": "earth_beast_hands",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2214,8 +2214,8 @@
             {
                 "type": "animation",
                 "basename": "fire_from_heaven",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2225,8 +2225,8 @@
             {
                 "type": "animation",
                 "basename": "beastcube6",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2236,8 +2236,8 @@
             {
                 "type": "animation",
                 "basename": "beast_screen2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2247,8 +2247,8 @@
             {
                 "type": "animation",
                 "basename": "sealing_666_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2258,8 +2258,8 @@
             {
                 "type": "animation",
                 "basename": "number_of_the_beast_stand",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2269,8 +2269,8 @@
             {
                 "type": "animation",
                 "basename": "number_of_the_beast5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     },
@@ -2286,8 +2286,8 @@
             {
                 "type": "animation",
                 "basename": "lamb_mt_zion",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2297,8 +2297,8 @@
             {
                 "type": "animation",
                 "basename": "waters_voices2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2308,8 +2308,8 @@
             {
                 "type": "animation",
                 "basename": "elect_harps_4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2319,8 +2319,8 @@
             {
                 "type": "animation",
                 "basename": "lamb_followers3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2335,8 +2335,8 @@
             {
                 "type": "animation",
                 "basename": "gospel_angel2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2351,8 +2351,8 @@
             {
                 "type": "animation",
                 "basename": "cloud_angel_3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2362,8 +2362,8 @@
             {
                 "type": "animation",
                 "basename": "wine_angel4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2373,8 +2373,8 @@
             {
                 "type": "animation",
                 "basename": "wine_angel_pours2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2384,8 +2384,8 @@
             {
                 "type": "animation",
                 "basename": "smoke_of_torment3-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2400,8 +2400,8 @@
             {
                 "type": "animation",
                 "basename": "john_writes_blessed_dead",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2411,8 +2411,8 @@
             {
                 "type": "animation",
                 "basename": "sickle_god2_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2422,8 +2422,8 @@
             {
                 "type": "animation",
                 "basename": "voice_from_temple",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2433,8 +2433,8 @@
             {
                 "type": "animation",
                 "basename": "reaping_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2444,8 +2444,8 @@
             {
                 "type": "animation",
                 "basename": "sickle_angel",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2455,8 +2455,8 @@
             {
                 "type": "animation",
                 "basename": "grapes_of_wrath2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2466,8 +2466,8 @@
             {
                 "type": "animation",
                 "basename": "reaping_angel-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2477,8 +2477,8 @@
             {
                 "type": "animation",
                 "basename": "winepress3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     },
@@ -2494,8 +2494,8 @@
             {
                 "type": "animation",
                 "basename": "vial_angel3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2505,8 +2505,8 @@
             {
                 "type": "animation",
                 "basename": "lake_o_fire3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2516,8 +2516,8 @@
             {
                 "type": "animation",
                 "basename": "song_o_moses-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2527,8 +2527,8 @@
             {
                 "type": "animation",
                 "basename": "song_o_lamb_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2538,8 +2538,8 @@
             {
                 "type": "animation",
                 "basename": "temple_opens4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2549,8 +2549,8 @@
             {
                 "type": "animation",
                 "basename": "vial_angels_temple",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2560,8 +2560,8 @@
             {
                 "type": "animation",
                 "basename": "vial_angels_beast",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2571,8 +2571,8 @@
             {
                 "type": "animation",
                 "basename": "temple_smoky5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     },
@@ -2583,8 +2583,8 @@
             {
                 "type": "animation",
                 "basename": "temple_voice",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2594,8 +2594,8 @@
             {
                 "type": "animation",
                 "basename": "vial_angel_pours_front3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2605,8 +2605,8 @@
             {
                 "type": "animation",
                 "basename": "sore_plague",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2616,8 +2616,8 @@
             {
                 "type": "animation",
                 "basename": "sea_plague3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2627,8 +2627,8 @@
             {
                 "type": "animation",
                 "basename": "plague_waters",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2638,8 +2638,8 @@
             {
                 "type": "animation",
                 "basename": "waters_angel",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2649,8 +2649,8 @@
             {
                 "type": "animation",
                 "basename": "lamb_blood_waters",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2660,8 +2660,8 @@
             {
                 "type": "animation",
                 "basename": "altar_angel3-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2671,8 +2671,8 @@
             {
                 "type": "animation",
                 "basename": "scorchy_angel2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2682,8 +2682,8 @@
             {
                 "type": "animation",
                 "basename": "angel_scorches_man",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2693,8 +2693,8 @@
             {
                 "type": "animation",
                 "basename": "vial_beast_darkness",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2709,8 +2709,8 @@
             {
                 "type": "animation",
                 "basename": "euphrates_dries_up",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2720,8 +2720,8 @@
             {
                 "type": "animation",
                 "basename": "froggy_triptych",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2731,8 +2731,8 @@
             {
                 "type": "animation",
                 "basename": "evil_spirits_morph",
-                "width": 360,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2742,8 +2742,8 @@
             {
                 "type": "animation",
                 "basename": "son_of_man3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2753,8 +2753,8 @@
             {
                 "type": "animation",
                 "basename": "armageddon5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2764,8 +2764,8 @@
             {
                 "type": "animation",
                 "basename": "plague_air_throne2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2775,8 +2775,8 @@
             {
                 "type": "animation",
                 "basename": "lightning_earthquake_hail_6",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2786,8 +2786,8 @@
             {
                 "type": "animation",
                 "basename": "cities_wrath2-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2797,8 +2797,8 @@
             {
                 "type": "animation",
                 "basename": "islands_flee4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2808,8 +2808,8 @@
             {
                 "type": "animation",
                 "basename": "hail_hits_man6-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     },
@@ -2825,8 +2825,8 @@
             {
                 "type": "animation",
                 "basename": "whore_waters2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2836,19 +2836,19 @@
             {
                 "type": "animation",
                 "basename": "kings_fornicate4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": null,
-                "text": " and the inhabitants of the earth have been made drunk with the wine of her fornication."
+                "text": "and the inhabitants of the earth have been made drunk with the wine of her fornication."
             },
             {
                 "type": "animation",
                 "basename": "wine_o_fornication3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2858,8 +2858,8 @@
             {
                 "type": "animation",
                 "basename": "beast_front6",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2869,8 +2869,8 @@
             {
                 "type": "animation",
                 "basename": "cup_o_filth8",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2880,8 +2880,8 @@
             {
                 "type": "animation",
                 "basename": "whore12closeup_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2891,8 +2891,8 @@
             {
                 "type": "animation",
                 "basename": "whore16_cups",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2902,8 +2902,8 @@
             {
                 "type": "animation",
                 "basename": "beast_ascends2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2913,8 +2913,8 @@
             {
                 "type": "animation",
                 "basename": "beast_sinners_mandala2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2924,8 +2924,8 @@
             {
                 "type": "animation",
                 "basename": "seven_mountains6",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2935,8 +2935,8 @@
             {
                 "type": "animation",
                 "basename": "seven_kings2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2946,8 +2946,8 @@
             {
                 "type": "animation",
                 "basename": "beast_descends2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2962,8 +2962,8 @@
             {
                 "type": "animation",
                 "basename": "ten_kings5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2973,8 +2973,8 @@
             {
                 "type": "animation",
                 "basename": "kings_vs_lamb2_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2984,8 +2984,8 @@
             {
                 "type": "animation",
                 "basename": "whore_waters_people3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -2995,8 +2995,8 @@
             {
                 "type": "animation",
                 "basename": "whore_burning2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3011,8 +3011,8 @@
             {
                 "type": "animation",
                 "basename": "whore_city4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     },
@@ -3028,8 +3028,8 @@
             {
                 "type": "animation",
                 "basename": "great_angel",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3039,8 +3039,8 @@
             {
                 "type": "animation",
                 "basename": "abaddon_in_whore",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3050,8 +3050,8 @@
             {
                 "type": "animation",
                 "basename": "merchants_drink_fornicationbw",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3061,8 +3061,8 @@
             {
                 "type": "animation",
                 "basename": "come_out_of_whore",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3072,8 +3072,8 @@
             {
                 "type": "animation",
                 "basename": "sins_reach_heaven2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3083,8 +3083,8 @@
             {
                 "type": "animation",
                 "basename": "whore_in_cup_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3094,8 +3094,8 @@
             {
                 "type": "animation",
                 "basename": "whore_reflection3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3105,8 +3105,8 @@
             {
                 "type": "animation",
                 "basename": "whore_fire2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3116,8 +3116,8 @@
             {
                 "type": "animation",
                 "basename": "smoke_of_her_burning2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3132,8 +3132,8 @@
             {
                 "type": "animation",
                 "basename": "merchants_weep",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3148,8 +3148,8 @@
             {
                 "type": "animation",
                 "basename": "whore_treasures6",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3159,8 +3159,8 @@
             {
                 "type": "animation",
                 "basename": "fruits_depart2-2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3175,8 +3175,8 @@
             {
                 "type": "animation",
                 "basename": "merchants_weep2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3191,8 +3191,8 @@
             {
                 "type": "animation",
                 "basename": "ship_of_fools",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3202,8 +3202,8 @@
             {
                 "type": "animation",
                 "basename": "merchants_anguished_fire",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3213,8 +3213,8 @@
             {
                 "type": "animation",
                 "basename": "heaven_rejoice2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3224,8 +3224,8 @@
             {
                 "type": "animation",
                 "basename": "millstone3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3235,8 +3235,8 @@
             {
                 "type": "animation",
                 "basename": "millstone_sea2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3251,8 +3251,8 @@
             {
                 "type": "animation",
                 "basename": "blood_of_slain2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     },
@@ -3268,8 +3268,8 @@
             {
                 "type": "animation",
                 "basename": "throne_rainbow_rays2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3279,8 +3279,8 @@
             {
                 "type": "animation",
                 "basename": "judged_great_whore",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3290,8 +3290,8 @@
             {
                 "type": "animation",
                 "basename": "smoke_rises_forever",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3301,8 +3301,8 @@
             {
                 "type": "animation",
                 "basename": "elders_falling2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3312,8 +3312,8 @@
             {
                 "type": "animation",
                 "basename": "lake_of_glass7_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3323,8 +3323,8 @@
             {
                 "type": "animation",
                 "basename": "waters_voices2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3339,8 +3339,8 @@
             {
                 "type": "animation",
                 "basename": "bride_of_lamb2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3350,8 +3350,8 @@
             {
                 "type": "animation",
                 "basename": "john_writes_fowls",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3361,8 +3361,8 @@
             {
                 "type": "animation",
                 "basename": "john_at_feet",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3372,8 +3372,8 @@
             {
                 "type": "animation",
                 "basename": "white_horse3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3388,8 +3388,8 @@
             {
                 "type": "animation",
                 "basename": "jesus_many_crowns_1eye",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3399,8 +3399,8 @@
             {
                 "type": "animation",
                 "basename": "horse_army",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3410,19 +3410,19 @@
             {
                 "type": "animation",
                 "basename": "jesus_mouthsword",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": null,
-                "text": " and he shall rule them with a rod of iron: and he treadeth the winepress of the fierceness and wrath of Almighty God."
+                "text": "and he shall rule them with a rod of iron: and he treadeth the winepress of the fierceness and wrath of Almighty God."
             },
             {
                 "type": "animation",
                 "basename": "winepress3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3432,8 +3432,8 @@
             {
                 "type": "animation",
                 "basename": "horse_jesus8",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3443,8 +3443,8 @@
             {
                 "type": "animation",
                 "basename": "birds_of_heaven",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3454,8 +3454,8 @@
             {
                 "type": "animation",
                 "basename": "birbs_eat_kings_horses3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3465,8 +3465,8 @@
             {
                 "type": "animation",
                 "basename": "beasts_vs_jesus3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3476,8 +3476,8 @@
             {
                 "type": "animation",
                 "basename": "beasts_lake_of_fire",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3487,8 +3487,8 @@
             {
                 "type": "animation",
                 "basename": "birbs_eat_heads",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     },
@@ -3504,8 +3504,8 @@
             {
                 "type": "animation",
                 "basename": "chain_angel2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3515,8 +3515,8 @@
             {
                 "type": "animation",
                 "basename": "dragon_bound_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3526,8 +3526,8 @@
             {
                 "type": "animation",
                 "basename": "dragon_shut_abyss",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3537,8 +3537,8 @@
             {
                 "type": "animation",
                 "basename": "elect_enthroned",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3548,8 +3548,8 @@
             {
                 "type": "animation",
                 "basename": "graveyard",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3559,8 +3559,8 @@
             {
                 "type": "animation",
                 "basename": "reign_with_god",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3570,8 +3570,8 @@
             {
                 "type": "animation",
                 "basename": "dragon_leaves_abyss2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3581,19 +3581,19 @@
             {
                 "type": "animation",
                 "basename": "dragon_city2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": 9,
-                "text": "And they went up on the breadth of the earth, and compassed the camp of the saints about, and the beloved city: "
+                "text": "And they went up on the breadth of the earth, and compassed the camp of the saints about, and the beloved city:"
             },
             {
                 "type": "animation",
                 "basename": "dragon_earth3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3603,8 +3603,8 @@
             {
                 "type": "animation",
                 "basename": "fire_from_god-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3614,8 +3614,8 @@
             {
                 "type": "animation",
                 "basename": "dragon_lake_of_fire",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3625,8 +3625,8 @@
             {
                 "type": "animation",
                 "basename": "throne_white",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3636,19 +3636,19 @@
             {
                 "type": "animation",
                 "basename": "book_of_life2_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": 13,
-                "text": "And the sea gave up the dead which were in it; "
+                "text": "And the sea gave up the dead which were in it;"
             },
             {
                 "type": "animation",
                 "basename": "dead_rise_sea",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3658,19 +3658,19 @@
             {
                 "type": "animation",
                 "basename": "dead_rise_hell",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
                 "number": null,
-                "text": " and they were judged every man according to their works."
+                "text": "and they were judged every man according to their works."
             },
             {
                 "type": "animation",
                 "basename": "judgement_scale2-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3685,8 +3685,8 @@
             {
                 "type": "animation",
                 "basename": "skeletons_falling2-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     },
@@ -3702,8 +3702,8 @@
             {
                 "type": "animation",
                 "basename": "earth_retreats2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3713,8 +3713,8 @@
             {
                 "type": "animation",
                 "basename": "nj_from_heaven2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3724,8 +3724,8 @@
             {
                 "type": "animation",
                 "basename": "nj_on_earth",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3735,8 +3735,8 @@
             {
                 "type": "animation",
                 "basename": "wipe_away_tears_sunset2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3746,8 +3746,8 @@
             {
                 "type": "animation",
                 "basename": "throne_on_earth",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3757,8 +3757,8 @@
             {
                 "type": "animation",
                 "basename": "fountain5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3768,8 +3768,8 @@
             {
                 "type": "animation",
                 "basename": "throne_with_men_goldhalo",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3779,8 +3779,8 @@
             {
                 "type": "animation",
                 "basename": "second_death5",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3790,8 +3790,8 @@
             {
                 "type": "animation",
                 "basename": "john_vial_angel-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3801,8 +3801,8 @@
             {
                 "type": "animation",
                 "basename": "john_angel_nj-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3817,8 +3817,8 @@
             {
                 "type": "animation",
                 "basename": "gates_angels3-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3828,8 +3828,8 @@
             {
                 "type": "animation",
                 "basename": "gate_expanding2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3844,8 +3844,8 @@
             {
                 "type": "animation",
                 "basename": "golden_reed-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3860,8 +3860,8 @@
             {
                 "type": "animation",
                 "basename": "nj_box_foldup_slower",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3876,8 +3876,8 @@
             {
                 "type": "animation",
                 "basename": "nj_gem_foundations4",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3892,8 +3892,8 @@
             {
                 "type": "animation",
                 "basename": "gates_street2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3908,8 +3908,8 @@
             {
                 "type": "animation",
                 "basename": "lamb_light",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3924,8 +3924,8 @@
             {
                 "type": "animation",
                 "basename": "no_night",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3940,8 +3940,8 @@
             {
                 "type": "animation",
                 "basename": "book_of_life_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     },
@@ -3957,8 +3957,8 @@
             {
                 "type": "animation",
                 "basename": "river_o_life",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3968,8 +3968,8 @@
             {
                 "type": "animation",
                 "basename": "tree_o_life3_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3979,8 +3979,8 @@
             {
                 "type": "animation",
                 "basename": "throne_and_lamb",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -3990,8 +3990,8 @@
             {
                 "type": "animation",
                 "basename": "name_foreheads3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -4001,8 +4001,8 @@
             {
                 "type": "animation",
                 "basename": "sun_moon_candle3",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -4017,8 +4017,8 @@
             {
                 "type": "animation",
                 "basename": "son_of_man_color",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -4033,8 +4033,8 @@
             {
                 "type": "animation",
                 "basename": "john_at_feet_color",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -4049,8 +4049,8 @@
             {
                 "type": "animation",
                 "basename": "judgement_scale2-1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -4070,8 +4070,8 @@
             {
                 "type": "animation",
                 "basename": "tree_o_life_expand_slower",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -4081,8 +4081,8 @@
             {
                 "type": "animation",
                 "basename": "dogs_frogs_morph",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -4092,8 +4092,8 @@
             {
                 "type": "animation",
                 "basename": "jesus_morph",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -4103,8 +4103,8 @@
             {
                 "type": "animation",
                 "basename": "tree_fountain",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -4119,8 +4119,8 @@
             {
                 "type": "animation",
                 "basename": "book_of_life_gold_2",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             },
             {
                 "type": "verse",
@@ -4135,8 +4135,8 @@
             {
                 "type": "animation",
                 "basename": "4star-cross_1",
-                "width": 640,
-                "height": 360
+                "width": 1280,
+                "height": 720
             }
         ]
     }
