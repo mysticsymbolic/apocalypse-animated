@@ -1,5 +1,5 @@
 //
-//  LoopingVideo.swift
+//  AnimationView.swift
 //  apocalypse-animated
 //
 //  Created by Atul Varma on 2/14/22.
@@ -8,7 +8,47 @@
 import SwiftUI
 import AVKit
 
-struct LoopingVideo : UIViewRepresentable {
+struct AnimationView: View {
+    let video: String
+    let width: Int
+    let height: Int
+    let containerGeometry: GeometryProxy
+    let maxWidth: Double
+    
+    var body: some View {
+        let (width, height) = self.getSize()
+        GeometryReader { geo in
+            // We're testing to see if the animation is *almost* visible,
+            // which will help prevent any brief flickers where the movie is
+            // still loading while it's on-screen.
+            let isAlmostVisible = self.isVisible(geo, yDilation: 100.0)
+            if isAlmostVisible {
+                LoopingVideoView(video: self.video, shouldPlay: self.isVisible(geo))
+            } else {
+                EmptyView()
+            }
+        }.frame(width: width, height: height)
+    }
+    
+    private func isVisible(_ geo: GeometryProxy, yDilation: Double = 0.0) -> Bool {
+        let frame = geo.frame(in: .global).insetBy(dx: 0.0, dy: -yDilation)
+        return frame.intersects(self.containerGeometry.frame(in: .global))
+    }
+    
+    private func getSize() -> (CGFloat, CGFloat) {
+        // This helps ensure that the animation actually
+        // goes edge-to-edge, i.e. that we don't have tiny
+        // subpixel slivers of empty space between the
+        // animation and the edge of the screen.
+        let EXTRA_WIDTH = 0.5
+        
+        let containerWidth = min(self.containerGeometry.frame(in: .global).width, CGFloat(self.maxWidth)) + EXTRA_WIDTH
+        let height = (CGFloat(self.height) * containerWidth) / CGFloat(self.width)
+        return (containerWidth, height)
+    }
+}
+
+private struct LoopingVideoView : UIViewRepresentable {
     typealias UIViewType = LoopingVideoUIView
     
     let video: String
@@ -26,7 +66,7 @@ struct LoopingVideo : UIViewRepresentable {
     }
 }
 
-class LoopingVideoUIView : UIView {
+private class LoopingVideoUIView : UIView {
     private let name: String
     private let playerLayer = AVPlayerLayer()
     private let player: AVPlayer

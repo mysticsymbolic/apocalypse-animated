@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B76E637027BB394E0087B04C /* LoopingVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E636F27BB394E0087B04C /* LoopingVideo.swift */; };
-		B77ECBF027B9BEC200623DEC /* apocalypse_animatedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ECBEF27B9BEC200623DEC /* apocalypse_animatedApp.swift */; };
+		B76E637027BB394E0087B04C /* AnimationVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E636F27BB394E0087B04C /* AnimationVIew.swift */; };
+		B77ECBF027B9BEC200623DEC /* ApocalypseAnimatedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ECBEF27B9BEC200623DEC /* ApocalypseAnimatedApp.swift */; };
 		B77ECBF227B9BEC200623DEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ECBF127B9BEC200623DEC /* ContentView.swift */; };
 		B77ECBF427B9BEC300623DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B77ECBF327B9BEC300623DEC /* Assets.xcassets */; };
 		B77ECBF727B9BEC300623DEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B77ECBF627B9BEC300623DEC /* Preview Assets.xcassets */; };
 		B77ECC0127B9BEC300623DEC /* apocalypse_animatedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ECC0027B9BEC300623DEC /* apocalypse_animatedTests.swift */; };
 		B77ECC0B27B9BEC300623DEC /* apocalypse_animatedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ECC0A27B9BEC300623DEC /* apocalypse_animatedUITests.swift */; };
 		B77ECC0D27B9BEC300623DEC /* apocalypse_animatedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ECC0C27B9BEC300623DEC /* apocalypse_animatedUITestsLaunchTests.swift */; };
+		B781404427CBAAC6005F6212 /* ChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781404327CBAAC6005F6212 /* ChapterView.swift */; };
+		B781404627CBAB2A005F6212 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781404527CBAB2A005F6212 /* Chapter.swift */; };
 		B7F8E52927C1B790008E26E7 /* content in Resources */ = {isa = PBXBuildFile; fileRef = B7F8E52827C1B790008E26E7 /* content */; };
 /* End PBXBuildFile section */
 
@@ -36,9 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B76E636F27BB394E0087B04C /* LoopingVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingVideo.swift; sourceTree = "<group>"; };
+		B76E636F27BB394E0087B04C /* AnimationVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationVIew.swift; sourceTree = "<group>"; };
 		B77ECBEC27B9BEC200623DEC /* apocalypse-animated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "apocalypse-animated.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B77ECBEF27B9BEC200623DEC /* apocalypse_animatedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apocalypse_animatedApp.swift; sourceTree = "<group>"; };
+		B77ECBEF27B9BEC200623DEC /* ApocalypseAnimatedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApocalypseAnimatedApp.swift; sourceTree = "<group>"; };
 		B77ECBF127B9BEC200623DEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B77ECBF327B9BEC300623DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B77ECBF627B9BEC300623DEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		B77ECC0627B9BEC300623DEC /* apocalypse-animatedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "apocalypse-animatedUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77ECC0A27B9BEC300623DEC /* apocalypse_animatedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apocalypse_animatedUITests.swift; sourceTree = "<group>"; };
 		B77ECC0C27B9BEC300623DEC /* apocalypse_animatedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apocalypse_animatedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B781404327CBAAC6005F6212 /* ChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterView.swift; sourceTree = "<group>"; };
+		B781404527CBAB2A005F6212 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		B7F8E52827C1B790008E26E7 /* content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = content; path = ../../content; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,9 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				B7F8E52827C1B790008E26E7 /* content */,
-				B77ECBEF27B9BEC200623DEC /* apocalypse_animatedApp.swift */,
+				B77ECBEF27B9BEC200623DEC /* ApocalypseAnimatedApp.swift */,
 				B77ECBF127B9BEC200623DEC /* ContentView.swift */,
-				B76E636F27BB394E0087B04C /* LoopingVideo.swift */,
+				B781404527CBAB2A005F6212 /* Chapter.swift */,
+				B781404327CBAAC6005F6212 /* ChapterView.swift */,
+				B76E636F27BB394E0087B04C /* AnimationVIew.swift */,
 				B77ECBF327B9BEC300623DEC /* Assets.xcassets */,
 				B77ECBF527B9BEC300623DEC /* Preview Content */,
 			);
@@ -264,9 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B76E637027BB394E0087B04C /* LoopingVideo.swift in Sources */,
+				B76E637027BB394E0087B04C /* AnimationVIew.swift in Sources */,
 				B77ECBF227B9BEC200623DEC /* ContentView.swift in Sources */,
-				B77ECBF027B9BEC200623DEC /* apocalypse_animatedApp.swift in Sources */,
+				B781404427CBAAC6005F6212 /* ChapterView.swift in Sources */,
+				B77ECBF027B9BEC200623DEC /* ApocalypseAnimatedApp.swift in Sources */,
+				B781404627CBAB2A005F6212 /* Chapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
