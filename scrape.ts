@@ -38,6 +38,8 @@ const HAS_RAW_4K_VIDEO_DIR = fs.existsSync(RAW_4K_VIDEO_DIR);
 
 const RAW_4K_DOWNSAMPLE_HEIGHT = 720;
 
+const GET_DIMENSIONS_FROM_MP4 = true;
+
 function parseVerseNumber(el: cheerio.Cheerio<cheerio.Element>): number|null {
     if (el.length === 1) {
         const text = el.text().trim();
@@ -171,6 +173,20 @@ function convertGifToMp4(absGifPath: string, absMp4Path: string) {
     child_process.execSync(`bash -c "${ffmpegCmdline}"`);
 }
 
+function getMp4Dimensions(absMp4Path: string): {width: number, height: number} {
+    const cached = path.join(CACHE_DIR, `${path.basename(absMp4Path)}.dimensions.json`);
+    const isCachedValid = fs.existsSync(cached) && fs.statSync(cached).mtime >= fs.statSync(absMp4Path).mtime
+    if (!isCachedValid) {
+        const relMp4Path = rootRelativePosixPath(absMp4Path);
+        const ffmpegCmdline = `ffprobe -v error -select_streams v -show_entries stream=width,height -of json ${relMp4Path}`
+        // Running this through bash to support running a WSL2-based ffmpeg on Windows.
+        console.log(`Getting dimensions of ${relMp4Path}.`);
+        const output = JSON.parse(child_process.execSync(`bash -c "${ffmpegCmdline}"`).toString('ascii'));
+        fs.writeFileSync(cached, JSON.stringify(output.streams[0]), {encoding: 'utf-8'});
+    }
+    return JSON.parse(fs.readFileSync(cached, {encoding: 'utf-8'}));
+}
+
 function writeBinaryFile(filename: string, value: Buffer) {
     ensureDirExistsForFile(filename);
     fs.writeFileSync(filename, value);
@@ -231,8 +247,8 @@ async function scrapeChapter(chapter: Chapter, html: string): Promise<Chapter> {
                 text,
             });
         } else if (item.name === 'img') {
-            const width = parseInt($(item).attr('width') || '');
-            const height = parseInt($(item).attr('height') || '');
+            let width = parseInt($(item).attr('width') || '');
+            let height = parseInt($(item).attr('height') || '');
             if (isNaN(width) || isNaN(height)) {
                 throw new Error(`Found <img> without width and/or height!`);
             }
@@ -258,6 +274,12 @@ async function scrapeChapter(chapter: Chapter, html: string): Promise<Chapter> {
                     const absGifPath = await cacheBinaryFile(src, filename);
                     convertGifToMp4(absGifPath, absMp4Path);
                 }
+            }
+
+            if (GET_DIMENSIONS_FROM_MP4) {
+                const d = getMp4Dimensions(absMp4Path);
+                width = d.width;
+                height = d.height;
             }
 
             chapter.items.push({
