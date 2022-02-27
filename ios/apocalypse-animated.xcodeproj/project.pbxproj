@@ -17,6 +17,7 @@
 		B77ECC0D27B9BEC300623DEC /* apocalypse_animatedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ECC0C27B9BEC300623DEC /* apocalypse_animatedUITestsLaunchTests.swift */; };
 		B781404427CBAAC6005F6212 /* ChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781404327CBAAC6005F6212 /* ChapterView.swift */; };
 		B781404627CBAB2A005F6212 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781404527CBAB2A005F6212 /* Chapter.swift */; };
+		B781404827CBB007005F6212 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781404727CBB007005F6212 /* AboutView.swift */; };
 		B7F8E52927C1B790008E26E7 /* content in Resources */ = {isa = PBXBuildFile; fileRef = B7F8E52827C1B790008E26E7 /* content */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		B77ECC0C27B9BEC300623DEC /* apocalypse_animatedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apocalypse_animatedUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B781404327CBAAC6005F6212 /* ChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterView.swift; sourceTree = "<group>"; };
 		B781404527CBAB2A005F6212 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		B781404727CBB007005F6212 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		B7F8E52827C1B790008E26E7 /* content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = content; path = ../../content; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 				B7F8E52827C1B790008E26E7 /* content */,
 				B77ECBEF27B9BEC200623DEC /* ApocalypseAnimatedApp.swift */,
 				B77ECBF127B9BEC200623DEC /* ContentView.swift */,
+				B781404727CBB007005F6212 /* AboutView.swift */,
 				B781404527CBAB2A005F6212 /* Chapter.swift */,
 				B781404327CBAAC6005F6212 /* ChapterView.swift */,
 				B76E636F27BB394E0087B04C /* AnimationVIew.swift */,
@@ -274,6 +277,7 @@
 				B77ECBF227B9BEC200623DEC /* ContentView.swift in Sources */,
 				B781404427CBAAC6005F6212 /* ChapterView.swift in Sources */,
 				B77ECBF027B9BEC200623DEC /* ApocalypseAnimatedApp.swift in Sources */,
+				B781404827CBB007005F6212 /* AboutView.swift in Sources */,
 				B781404627CBAB2A005F6212 /* Chapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -44,6 +44,9 @@ struct ContentView: View {
                         }
                         Text(chapter.description).padding([.bottom]).foregroundColor(.gray)
                     }
+                    NavigationLink(destination: AboutView()) {
+                        Text("About Apocalypse Animated").padding()
+                    }
                 }.frame(maxWidth: .infinity)
             }
             // We're forcing a StackNavigationViewStyle because problems
